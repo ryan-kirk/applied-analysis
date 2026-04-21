@@ -1,0 +1,13 @@
+Applied Analysis - Trend Signal
+----------------------------------------
+Signal: Interest Rates (10-Year Treasury Rate)
+Time range: 2021-01-04 to 2024-12-30
+Absolute change: +3.47 percentage points (1.13% to 4.60%)
+Percent change: +307.1%
+Average yearly movement: +0.87 percentage points per year
+Direction: Increasing
+Strength: Meaningful
+Pattern: Uneven, but clearly directional
+
+What to notice:
+The 10-year Treasury rate ended higher than where it began, moving from 1.13% to 4.60%. The path moved around along the way, but the overall shift is clear. This matters because long-term rates shape borrowing costs for households, companies, and public budgets.

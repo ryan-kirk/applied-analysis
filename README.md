@@ -23,17 +23,6 @@ data -> change -> signal -> interpretation
 
 The interpretation is the point. Calculations support the analysis, but they are not the final product.
 
-## What Belongs Here
-
-Good examples are small, clear, and focused. They should answer questions like:
-
-- What changed?
-- Is the change meaningful?
-- What should someone notice?
-- How might this affect a decision?
-
-Each example should be easy for a non-specialist to read, run, and understand.
-
 ## Repository Structure
 
 ```text
@@ -49,22 +38,44 @@ applied-analysis/
 - `examples/trend_signal/` is the first example and shows the core pattern.
 - `src/` is reserved for simple reusable components once multiple examples need them.
 
-## First Example
+## First Example: Trend Signal
 
-`examples/trend_signal/` asks:
+`examples/trend_signal/` asks a simple question:
 
-> What is changing over time, and what should we notice?
+What is changing over time, and what should we notice?
 
-It uses a small time series, compares the first and last values, classifies the movement, and prints a short interpretation.
+It uses a small extract of the FRED 10-year Treasury rate series, compares the first and last values, classifies the movement, prints a short interpretation, and saves a simple chart.
+
+Start here: [Trend Signal Example](./examples/trend_signal/)
+
+For the plain-language analysis, see [Trend Signal Insight](./examples/trend_signal/INSIGHT.md).
 
 Run it with:
 
 ```bash
+python3 -m pip install -r requirements.txt
 python3 examples/trend_signal/trend_signal.py
 ```
 
-## Direction
+## Future Direction
 
-The early goal is to build a small set of credible examples that translate data into useful interpretations.
+The early goal is to build a small set of examples that translate data into useful interpretations.
 
-As the examples grow, selected projects can be surfaced through a unified UI and hosted publicly on Fly. The priority should remain the same: clear signals, plain-language interpretation, and minimal setup.
+As the examples grow, selected projects can be surfaced through a unified UI and hosted publicly. The focus should remain on clear signals, plain-language interpretation, and minimal setup.
+
+This repository will expand with additional examples focused on:
+- comparing signals
+- identifying thresholds and inflection points
+- adding context to data
+- translating analysis into decision-oriented summaries
+
+## Contributing Ideas
+
+If there is a signal or real-world question you’d like to see explored, feel free to open an issue.
+
+The goal is to build examples that focus on:
+- what is changing
+- what matters
+- how to interpret it clearly
+
+Not all ideas will be implemented, but thoughtful suggestions are welcome.

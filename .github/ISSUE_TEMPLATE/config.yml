@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Discussion
+    url: https://github.com/ryan-kirk/applied-analysis/discussions
+    about: Use discussions for general questions, early ideas, or broader applied-analysis topics.
