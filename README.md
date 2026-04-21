@@ -39,7 +39,6 @@ Each example should be easy for a non-specialist to read, run, and understand.
 ```text
 applied-analysis/
   README.md
-  STRATEGY.md
   requirements.txt
   examples/
     trend_signal/
@@ -49,7 +48,6 @@ applied-analysis/
 - `examples/` contains one small project per folder.
 - `examples/trend_signal/` is the first example and shows the core pattern.
 - `src/` is reserved for simple reusable components once multiple examples need them.
-- `STRATEGY.md` describes the short- and long-term direction for the repository.
 
 ## First Example
 
