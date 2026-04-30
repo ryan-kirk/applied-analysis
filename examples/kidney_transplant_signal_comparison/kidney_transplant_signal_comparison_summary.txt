@@ -1,0 +1,20 @@
+Applied Analysis - Signal Comparison
+----------------------------------------
+Question: How does kidney transplant volume relate to kidney waitlist demand over time?
+Time range: 2016 to 2025
+Signal A: Kidney transplants performed
+  33,610 -> 49,065 (+46.0%)
+Signal B: Kidney waitlist additions
+  58,888 -> 81,728 (+38.8%)
+Relationship: Moving Together
+Possible lag: No Clear Lag
+Level correlation: 0.95
+Year-over-year change correlation: 0.72
+Demand minus transplants gap: 25,278 -> 32,663
+Transplants as a share of waitlist additions: 57.1% -> 60.0%
+
+What to notice:
+The two system signals mostly moved together over this period. Kidney transplants rose from 33,610 to 49,065, while annual kidney waitlist additions rose from 58,888 to 81,728. Transplant volume improved slightly relative to incoming waitlist demand, but demand still stayed much larger than the number of transplants performed. In this annual view, there is no clear lag, so the clearest signal is persistent system pressure rather than a simple delayed response.
+
+Source note:
+This example uses annual kidney transplants and annual kidney waitlist additions from the public OPTN Metrics dashboard. Waitlist additions are used here as a transparent proxy for waitlist demand in a small, local example.

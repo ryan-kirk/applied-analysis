@@ -31,11 +31,13 @@ applied-analysis/
   requirements.txt
   examples/
     trend_signal/
+    kidney_transplant_signal_comparison/
   src/
 ```
 
 - `examples/` contains one small project per folder.
 - `examples/trend_signal/` is the first example and shows the core pattern.
+- `examples/kidney_transplant_signal_comparison/` is the comparison example and shows how two public system signals can be interpreted together.
 - `src/` is reserved for simple reusable components once multiple examples need them.
 
 ## First Example: Trend Signal
@@ -49,6 +51,14 @@ It uses a small extract of the FRED 10-year Treasury rate series, compares the f
 Start here: [Trend Signal Example](./examples/trend_signal/)
 
 For the plain-language analysis, see [Trend Signal Insight](./examples/trend_signal/INSIGHT.md).
+
+## Second Example: Kidney Transplant Signal Comparison
+
+`examples/kidney_transplant_signal_comparison/` asks:
+
+How does kidney transplant volume relate to kidney transplant waitlist demand over time?
+
+It compares annual kidney transplants with annual kidney waitlist additions from public OPTN reporting, summarizes whether the two signals are moving together or apart, checks for a simple lag pattern, and explains the result in plain language.
 
 Run it with:
 
