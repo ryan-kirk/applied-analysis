@@ -20,6 +20,7 @@ except ModuleNotFoundError:
 
 
 BASE_DIR = Path(__file__).parent
+REPO_ROOT = BASE_DIR.parents[1]
 DATA_PATH = BASE_DIR / "data" / "us_10_year_treasury_rate.csv"
 CHART_PATH = BASE_DIR / "trend_signal.png"
 SUMMARY_PATH = BASE_DIR / "trend_signal_summary.txt"
@@ -173,6 +174,10 @@ def save_summary(report, path):
     path.write_text(report + "\n", encoding="utf-8")
 
 
+def repo_relative_path(path):
+    return path.relative_to(REPO_ROOT).as_posix()
+
+
 def main():
     series = load_series(DATA_PATH)
     summary = summarize_change(series)
@@ -185,8 +190,8 @@ def main():
     console_report = build_report(
         summary,
         interpretation,
-        chart_path=CHART_PATH.resolve(),
-        summary_path=SUMMARY_PATH.resolve(),
+        chart_path=repo_relative_path(CHART_PATH),
+        summary_path=repo_relative_path(SUMMARY_PATH),
     )
 
     print(console_report)
