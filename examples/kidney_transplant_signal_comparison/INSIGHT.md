@@ -30,3 +30,12 @@ Looking at the two lines together suggests that system capacity improved, but pr
 ## Takeaway
 
 The comparison suggests that kidney transplant activity increased meaningfully, but demand pressure also stayed high. For a non-specialist, the clearest takeaway is that progress in transplant volume did not remove the broader system imbalance.
+
+## Source
+
+Transplant and waitlist-addition counts in this example were taken from the public OPTN Metrics dashboard and HRSA's OPTN data pages:
+
+- OPTN Metrics dashboard: https://insights.unos.org/OPTN-metrics/
+- HRSA OPTN Data & Calculators: https://www.hrsa.gov/optn/data
+
+Questions like this are often answered best not by a single data point, but by putting data in context and making comparison possible.

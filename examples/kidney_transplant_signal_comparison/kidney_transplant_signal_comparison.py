@@ -210,8 +210,9 @@ def build_report(summary, interpretation, chart_path=None, summary_path=None):
         "Source note:",
         (
             "This example uses annual kidney transplants and annual kidney waitlist additions "
-            "from the public OPTN Metrics dashboard. Waitlist additions are used here as a "
-            "transparent proxy for waitlist demand in a small, local example."
+            "from the public OPTN Metrics dashboard (https://insights.unos.org/OPTN-metrics/) "
+            "and HRSA OPTN data pages (https://www.hrsa.gov/optn/data). Waitlist additions "
+            "are used here as a transparent proxy for waitlist demand in a small, local example."
         ),
     ]
 

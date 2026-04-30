@@ -30,6 +30,8 @@ Source basis:
 - OPTN Metrics dashboard: `https://insights.unos.org/OPTN-metrics/`
 - HRSA OPTN Data & Calculators page: `https://www.hrsa.gov/optn/data`
 
+The annual transplant counts and annual kidney waitlist-addition counts in the local CSV were transcribed from those public sources for a small, reproducible example.
+
 Why waitlist additions?
 
 The original question points toward waitlist demand. In this small public example, annual kidney waitlist additions are used as a transparent demand proxy because they are available from the public OPTN metrics dashboard in a way that is easy to extract and store locally.
