@@ -1,0 +1,27 @@
+Applied Analysis - Threshold Detection
+----------------------------------------
+Question: When does imported food become a large enough share of the Sub-Saharan African food system to merit closer attention?
+Region: Sub-Saharan Africa
+Time range: 2000 to 2024
+Signal A: Agriculture value added
+  $66.1B -> $355.3B (+437.9%)
+Signal B: Estimated food imports
+  $10.3B -> $57.1B (+455.4%)
+Threshold signal: Imported food share of available supply proxy above 15%
+Crossings: 2011 (rose above 15% at 19.5%); 2015 (fell back below 15% at 14.4%); 2016 (rose above 15% at 15.2%); 2019 (fell back below 15% at 11.5%)
+Total years above threshold: 7
+Peak imported share: 19.5% in 2011
+Latest imported share: 13.9%
+Population context: 681M -> 1291M (+89.5%)
+
+What changed before and after the first crossing:
+Imported share average: 13.7% before -> 17.4% during the first above-threshold stretch
+Estimated food imports average: $35.4B before -> $56.3B during
+Agriculture value added average: $222.5B before -> $269.2B during
+
+What to notice:
+The imported-food-share proxy first rose above the 15% threshold in 2011 and spent 7 years above that level across the sample. Above-threshold stretches occurred in 2011-2014 (4 years), 2016-2018 (3 years). Before the first crossing, the proxy averaged 13.7%; during the first above-threshold stretch it averaged 17.4%. Over the full 2000-2024 window, agriculture value added rose from $66.1B to $355.3B, estimated food imports rose from $10.3B to $57.1B, and the regional population rose from 681M to 1291M.
+
+Source note:
+This example uses a local extract of World Bank regional indicators for Sub-Saharan Africa: agriculture, forestry, and fishing value added (current US$), merchandise imports (current US$), food imports (% of merchandise imports), and total population. Estimated food imports are calculated as merchandise imports multiplied by the food-import share. The threshold signal uses an imported-food share proxy: food imports / (agriculture value added + food imports).
+Interpretation is descriptive, not causal. The threshold is transparent and easy to change if a different attention level is more useful.

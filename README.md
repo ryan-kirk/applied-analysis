@@ -32,12 +32,14 @@ applied-analysis/
   examples/
     trend_signal/
     kidney_transplant_signal_comparison/
+    agriculture_system_pressure_africa/
   src/
 ```
 
 - `examples/` contains one small project per folder.
 - `examples/trend_signal/` is the first example and shows the core pattern.
 - `examples/kidney_transplant_signal_comparison/` is the comparison example and shows how two public system signals can be interpreted together.
+- `examples/agriculture_system_pressure_africa/` extends the pattern into threshold detection with an Africa-focused agricultural systems example.
 - `src/` is reserved for simple reusable components once multiple examples need them.
 
 ## First Example: Trend Signal
@@ -64,7 +66,22 @@ Run it with:
 
 ```bash
 python3 -m pip install -r requirements.txt
-python3 examples/trend_signal/trend_signal.py
+python3 examples/kidney_transplant_signal_comparison/kidney_transplant_signal_comparison.py
+```
+
+## Third Example: Agriculture System Pressure in Africa
+
+`examples/agriculture_system_pressure_africa/` asks:
+
+When does imported food become a large enough share of a regional food system to merit closer attention?
+
+It aligns Sub-Saharan Africa agriculture value added with estimated food imports, calculates an imported-share proxy, detects threshold crossings, and explains the result in plain language.
+
+Run it with:
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 examples/agriculture_system_pressure_africa/agriculture_system_pressure_africa.py
 ```
 
 ## Future Direction
