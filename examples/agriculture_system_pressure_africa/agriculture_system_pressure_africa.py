@@ -274,7 +274,11 @@ def save_chart(series, summary, path):
 
     for crossing in summary["crossings"]:
         y_value = crossing.value * 100
-        label = f"{crossing.position}\n{'Above' if crossing.crossed_above else 'Below'}"
+        label = (
+            f"{crossing.position}\nAbove threshold"
+            if crossing.crossed_above
+            else f"{crossing.position}\nBelow threshold"
+        )
         offset = 1.1 if crossing.crossed_above else 1.8
         bottom_ax.scatter([crossing.position], [y_value], color="#aa2e25", s=40, zorder=3)
         bottom_ax.annotate(

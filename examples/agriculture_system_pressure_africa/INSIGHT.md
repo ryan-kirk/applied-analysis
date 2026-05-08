@@ -17,11 +17,11 @@ This example is about Sub-Saharan Africa, not the entire African continent. The 
 
 In this regional view of Sub-Saharan Africa, agriculture value added and estimated food imports both rose over the long run, but imported food became a noticeably larger share of the available-supply proxy during parts of the 2010s.
 
-Using a transparent 15% threshold, the imported-food-share proxy crossed above the line in 2011, moved back below in 2015, crossed above again in 2016, and fell below again in 2019. That means the region spent multiple multi-year stretches above the chosen attention level rather than only a single brief spike.
+Using a transparent 15% threshold, the imported-food-share proxy crossed above the line in 2011, moved back below in 2015, crossed above again in 2016, and fell below again in 2019. Rather than a single spike, those crossings form multi-year stretches above the line, suggesting periods of sustained system pressure rather than isolated volatility.
 
 ## Why It Matters
 
-This matters because the raw import and production lines alone do not make the pressure point obvious. The threshold view turns the comparison into a clearer signal: when imports account for a larger share of the system, the balance between domestic production and external supply looks different than it does in lower-share years.
+This matters because the raw import and production lines alone do not make the pressure point obvious. The threshold makes it easier to distinguish between normal growth and periods where the balance between domestic production and external supply shifts meaningfully.
 
 The population context sharpens that reading. Sub-Saharan Africa's population grew substantially across the same period, and the updated chart places population on a second axis so the relationship between people, domestic agricultural output, and food imports can be studied together without implying causation.
 
@@ -36,12 +36,14 @@ The population context sharpens that reading. Sub-Saharan Africa's population gr
 ## What to Notice
 
 - The threshold crossing is a more useful signal than either line alone
-- Above-threshold periods lasted long enough to look structural within this sample, not purely momentary
+- Above-threshold periods formed sustained multi-year stretches rather than isolated one-year spikes
 - The regional system moved back below the threshold after 2018, but the proxy remained elevated enough to watch
 
 ## Takeaway
 
-The descriptive signal here is not that imports replaced domestic production, but that imported food became a meaningfully larger share of the Sub-Saharan African food system during parts of the 2010s and later eased below that threshold. For a non-specialist, the clearest takeaway is that threshold detection helps distinguish normal variation from periods that deserve closer attention.
+The descriptive signal is not that imports replaced domestic production, but that imported food became a meaningfully larger share of the system during sustained periods in the 2010s before easing. The key insight is that threshold detection helps distinguish gradual change from periods of structural pressure.
+
+This example extends simple signal comparison by introducing threshold detection as a way to highlight when system behavior meaningfully changes.
 
 ## Source
 
