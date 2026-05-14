@@ -40,6 +40,7 @@ applied-analysis/
 - `examples/trend_signal/` is the first example and shows the core pattern.
 - `examples/kidney_transplant_signal_comparison/` is the comparison example and shows how two public system signals can be interpreted together.
 - `examples/agriculture_system_pressure_africa/` extends the pattern into threshold detection with an Africa-focused agricultural systems example.
+- `examples/ssa_agricultural_capital_pressure/` adds contextual events and capital-cost context on top of threshold windows for Sub-Saharan Africa.
 - `src/` is reserved for simple reusable components once multiple examples need them.
 
 ## First Example: Trend Signal
@@ -82,6 +83,21 @@ Run it with:
 ```bash
 python3 -m pip install -r requirements.txt
 python3 examples/agriculture_system_pressure_africa/agriculture_system_pressure_africa.py
+```
+
+## Fourth Example: SSA Agricultural Capital Pressure
+
+`examples/ssa_agricultural_capital_pressure/` asks:
+
+When a system enters an imported-food pressure window, what contextual events and capital-cost conditions may help explain what was happening around that period?
+
+It reuses the Sub-Saharan Africa agriculture threshold dataset, adds a small curated events file, overlays those events on the threshold windows, and adds a transparent capital-cost proxy to deepen the interpretation without claiming causation.
+
+Run it with:
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 examples/ssa_agricultural_capital_pressure/ssa_agricultural_capital_pressure.py
 ```
 
 ## Future Direction

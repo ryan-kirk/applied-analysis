@@ -1,0 +1,31 @@
+Applied Analysis - Event Context Windows
+----------------------------------------
+Question: When imported-food pressure crosses an attention threshold, which contextual events and capital-cost conditions help explain what was happening around that period?
+Region: Sub-Saharan Africa
+Time range: 2000 to 2024
+Threshold signal: Imported food share of available supply proxy above 15%
+Agriculture value added: $66.1B -> $355.3B
+Estimated food imports: $10.3B -> $57.1B
+Population context: 681M -> 1291M (+89.5%)
+Imported-food-share change: +2.8% from the first to latest year
+Capital-cost proxy change: -27.2% from the first to latest year
+Peak imported-food share: 19.5% in 2011
+Peak capital-cost proxy: 19.7% in 2002
+Latest imported-food share: 13.9%
+Latest capital-cost proxy: 14.1%
+
+Pressure windows:
+- Pressure window 1: 2011-2014 (4 years) | avg imported share 17.4% | avg capital cost 14.2%
+- Pressure window 2: 2016-2018 (3 years) | avg imported share 15.4% | avg capital cost 13.9%
+
+Contextual events:
+- Pressure window 1 (2011-2014) aligned with 2010 Global food price spike (before); 2011 Horn of Africa drought (during); 2014 Commodity price downturn (during).
+- Pressure window 2 (2016-2018) aligned with 2016 Foreign exchange pressure (during); 2018 Mechanization and digital agriculture growth (during).
+
+What to notice:
+The imported-food-share proxy crossed into two sustained pressure windows: 2011-2014 and 2016-2018. A total of 5 curated events fall either in the year before or during those windows, which helps explain what was happening around the pressure episodes without claiming those events caused the threshold crossing. Capital costs were already elevated entering the first window and averaged 14.2% during it, +0.2 percentage points versus the one-year lead period. By the second window, imported-food pressure stayed above threshold even as the capital-cost proxy eased from its 2002 peak, which suggests the signal reflects a wider system context rather than a single financing variable. The latest reading is below threshold, but imported-food share remains above its 2000 level while the capital-cost proxy has moved back up from its 2021 low.
+
+Source note:
+The imported-food data come from the existing local World Bank regional extract for Sub-Saharan Africa. Estimated food imports are recalculated as merchandise imports multiplied by the food-import share, and the threshold signal is estimated food imports / (agriculture value added + estimated food imports).
+The capital-cost proxy is a simple annual average of World Bank lending interest-rate series for Nigeria, South Africa, and Kenya. That is a transparent regional financing proxy, not a complete measure of agricultural borrowing costs across Sub-Saharan Africa.
+Events are a small curated context set. Their timing may help interpretation, but the chart and summary do not prove causation.
