@@ -4,6 +4,7 @@ Question: When imported-food pressure crosses an attention threshold, which cont
 Region: Sub-Saharan Africa
 Time range: 2000 to 2024
 Threshold signal: Imported food share of available supply proxy above 15%
+Candidate watch threshold: 13.5%
 Agriculture value added: $66.1B -> $355.3B
 Estimated food imports: $10.3B -> $57.1B
 Population context: 681M -> 1291M (+89.5%)
@@ -22,8 +23,14 @@ Contextual events:
 - Pressure window 1 (2011-2014) aligned with 2010 Global food price spike (before); 2011 Horn of Africa drought (during); 2014 Commodity price downturn (during).
 - Pressure window 2 (2016-2018) aligned with 2016 Foreign exchange pressure (during); 2018 Mechanization and digital agriculture growth (during).
 
+Recent watch period:
+- Imported-food share rose from 12.5% in 2022 to 13.9% in 2024 (+1.4 percentage points).
+- Capital-cost proxy rose from 11.2% in 2022 to 14.1% in 2024 (+3.0 percentage points).
+- A lower 13.5% watch threshold would flag 2024 as a renewed watch year, even though the main 15% threshold has not been crossed again.
+- Recent context event(s): 2024 Higher-for-longer rates and Red Sea trade disruption.
+
 What to notice:
-The imported-food-share proxy crossed into two sustained pressure windows: 2011-2014 and 2016-2018. A total of 5 curated events fall either in the year before or during those windows, which helps explain what was happening around the pressure episodes without claiming those events caused the threshold crossing. Capital costs were already elevated entering the first window and averaged 14.2% during it, +0.2 percentage points versus the one-year lead period. By the second window, imported-food pressure stayed above threshold even as the capital-cost proxy eased from its 2002 peak, which suggests the signal reflects a wider system context rather than a single financing variable. The latest reading is below threshold, but imported-food share remains above its 2000 level while the capital-cost proxy has moved back up from its 2021 low.
+The imported-food-share proxy crossed into two sustained pressure windows: 2011-2014 and 2016-2018. A total of 5 curated events fall either in the year before or during those windows, which helps explain what was happening around the pressure episodes without claiming those events caused the threshold crossing. Capital costs were already elevated entering the first window and averaged 14.2% during it, +0.2 percentage points versus the one-year lead period. By the second window, imported-food pressure stayed above threshold even as the capital-cost proxy eased from its 2002 peak, which suggests the signal reflects a wider system context rather than a single financing variable. The latest reading is below threshold, but imported-food share has risen from 12.5% in 2022 to 13.9% in 2024, while the capital-cost proxy rose from 11.2% to 14.1%. There is still no third 15% pressure window, but a lower 13.5% watch threshold would now flag 2024 as a renewed watch year. One recent backdrop in the curated file is the 2024 Higher-for-longer rates and Red Sea trade disruption.
 
 Source note:
 The imported-food data come from the existing local World Bank regional extract for Sub-Saharan Africa. Estimated food imports are recalculated as merchandise imports multiplied by the food-import share, and the threshold signal is estimated food imports / (agriculture value added + estimated food imports).

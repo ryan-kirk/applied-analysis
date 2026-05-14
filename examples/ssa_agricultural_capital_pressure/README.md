@@ -35,10 +35,15 @@ imported_food_share = estimated_food_imports / (agriculture_value_added + estima
 - loads the existing Sub-Saharan Africa agriculture system pressure dataset
 - recalculates estimated food imports and the imported-food-share proxy
 - loads a simple capital-cost proxy trend for regional financing conditions
+- plots population on the agriculture/imports chart using a second axis for scale context
 - detects years above the 15% threshold and converts them into named pressure windows
 - loads a small contextual events CSV and classifies events as before or during each window
-- overlays events on the threshold chart and compares them with the capital-cost trend
+- overlays events on the imported-share chart while placing the capital-cost proxy on the second axis of that same panel
 - writes a plain-language summary that adds context without claiming causation
+
+## Recent Watch Narrative
+
+The example now also checks whether the latest rebound is strong enough to merit a lighter watch threshold below the main 15% line. In the current data, 2024 does not create a new pressure window, but it is strong enough to discuss as a renewed watch year alongside a recent macro or trade backdrop.
 
 ## Why The Capital-Cost Proxy Is Limited
 
