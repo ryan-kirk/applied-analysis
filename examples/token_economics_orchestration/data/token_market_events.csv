@@ -1,0 +1,6 @@
+event_date,event_type,event_name,vendor,description,source_url,relevance
+2023-03-14,launch,GPT-4 API pricing anchor,OpenAI,Early frontier list pricing makes long-form outputs expensive enough to constrain experimentation.,https://openai.com/api/pricing,high
+2024-05-13,pricing_cut,GPT-4o lowers frontier token prices,OpenAI,Lower frontier list prices materially reduce the cost of high-context calls.,https://openai.com/api/pricing,high
+2024-07-18,pricing_cut,GPT-4o mini expands low-cost volume,OpenAI,Budget-tier pricing makes cheap inference widely available for routine tasks.,https://openai.com/api/pricing,medium
+2025-04-14,pricing_update,Long-context model refresh,OpenAI,Later public pricing snapshots push down list prices while increasing context windows.,https://openai.com/api/pricing,high
+2025-09-01,orchestration,Agentic workflow adoption,Multi-vendor,Planner executor tool-use and critic loops become more common in public demos and open-source frameworks.,https://github.com/microsoft/autogen,medium

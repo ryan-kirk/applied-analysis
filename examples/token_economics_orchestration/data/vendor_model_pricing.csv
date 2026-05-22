@@ -1,0 +1,12 @@
+effective_date,vendor,model,model_family,pricing_unit,input_per_1m_usd,output_per_1m_usd,cached_input_per_1m_usd,context_window_tokens,pricing_url,notes
+2023-03-14,OpenAI,gpt-4,flagship,per_1m_tokens,30.00,60.00,0.00,8192,https://openai.com/api/pricing,Public flagship launch-era list price snapshot.
+2023-11-06,OpenAI,gpt-4-turbo,balanced,per_1m_tokens,10.00,30.00,0.00,128000,https://openai.com/api/pricing,Public late-2023 balanced-tier list price snapshot.
+2023-11-06,OpenAI,gpt-3.5-turbo,budget,per_1m_tokens,1.00,2.00,0.00,16000,https://openai.com/api/pricing,Public late-2023 budget-tier list price snapshot.
+2024-03-04,Anthropic,claude-3-sonnet,balanced,per_1m_tokens,3.00,15.00,0.30,200000,https://www.anthropic.com/pricing,Public balanced-tier list price snapshot with prompt caching.
+2024-05-13,OpenAI,gpt-4o,flagship,per_1m_tokens,5.00,15.00,2.50,128000,https://openai.com/api/pricing,Public lower-cost frontier price snapshot.
+2024-06-27,Google,gemini-1.5-flash,budget,per_1m_tokens,0.35,1.05,0.0875,1000000,https://ai.google.dev/pricing,Public budget-tier list price snapshot.
+2024-07-18,OpenAI,gpt-4o-mini,budget,per_1m_tokens,0.15,0.60,0.075,128000,https://openai.com/api/pricing,Public budget-tier list price snapshot.
+2025-02-24,Anthropic,claude-3.7-sonnet,flagship,per_1m_tokens,3.00,15.00,0.30,200000,https://www.anthropic.com/pricing,Representative public flagship snapshot for an agent-oriented release.
+2025-04-14,OpenAI,gpt-4.1,flagship,per_1m_tokens,2.00,8.00,0.50,1000000,https://openai.com/api/pricing,Public long-context flagship list price snapshot.
+2025-04-14,OpenAI,gpt-4.1-mini,balanced,per_1m_tokens,0.40,1.60,0.10,1000000,https://openai.com/api/pricing,Public balanced-tier list price snapshot.
+2025-04-14,OpenAI,gpt-4.1-nano,budget,per_1m_tokens,0.10,0.40,0.025,1000000,https://openai.com/api/pricing,Public budget-tier list price snapshot.

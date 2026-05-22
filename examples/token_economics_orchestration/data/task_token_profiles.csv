@@ -1,0 +1,5 @@
+task_type,task_name,description,input_tokens,output_tokens,cacheable_input_tokens,retrieval_tokens,tool_result_tokens,human_review_tokens,expected_runs_per_task,notes
+support,Customer support answer,Single-turn support answer with light retrieval and modest output.,2200,500,700,400,150,50,1,Scenario assumption for a light task.
+research,Research brief,Short analytical synthesis using retrieval evidence and one follow-up pass.,7000,1800,2500,1800,1200,300,2,Scenario assumption for a medium-complexity task.
+coding,Code patch with tests,Agent-assisted coding task with repository context and test feedback.,12000,3200,4000,2500,4000,600,3,Scenario assumption for a higher-overhead task.
+orchestration,Multi-agent workflow review,"Planner plus executor loop with retrieval, tool use, and critique.",16000,4500,6000,3500,6000,800,4,Scenario assumption for a heavy orchestration task.

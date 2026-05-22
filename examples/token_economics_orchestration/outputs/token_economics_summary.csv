@@ -1,0 +1,25 @@
+metric,value
+title,When Cheap Tokens Get Expensive: The Hidden Cost of Agentic Workflows
+question,"Are falling token prices reducing cost per task, or are agents and orchestration increasing token usage enough to offset the savings?"
+price_trend_direction,decreasing
+usage_trend_direction,increasing
+signal_relationship,conflict
+latest_orchestration_inflation_factor,17.0321
+latest_cached_discount_ratio,0.4807
+latest_cost_decline_vs_baseline,0.5865
+inflation_windows,Inflation window 1 2023-2026
+cache_windows,none
+cost_decline_windows,Cost decline window 1 2025-2026
+interpretation,"Blended list prices fell from $16.83 to $1.55 per 1M tokens, while weighted tokens per task rose from 122,658 to 616,593. The signal comparison is conflict: Estimated blended token list price is decreasing while Estimated weighted tokens per task is increasing, so the signals conflict. Net cost per task moved from $2.02 to $0.83. Cheaper tokens still reduce cost per task overall, but multi-step orchestration absorbs a meaningful share of the savings. Inflation threshold windows: 1; cache windows: 0; cost-decline windows: 1. Relevant event context around inflation windows: 2023 GPT-4 API pricing anchor (during); 2024 GPT-4o lowers frontier token prices (during); 2024 GPT-4o mini expands low-cost volume (during); 2025 Agentic workflow adoption (during); 2025 Long-context model refresh (during)"
+2023_blended_token_price_per_1m_usd,16.8322
+2023_weighted_tokens_per_task,122658.00
+2023_weighted_net_cost_per_task,2.0179
+2024_blended_token_price_per_1m_usd,4.5727
+2024_weighted_tokens_per_task,260499.83
+2024_weighted_net_cost_per_task,1.1449
+2025_blended_token_price_per_1m_usd,1.3757
+2025_weighted_tokens_per_task,411375.98
+2025_weighted_net_cost_per_task,0.5172
+2026_blended_token_price_per_1m_usd,1.5467
+2026_weighted_tokens_per_task,616593.26
+2026_weighted_net_cost_per_task,0.8344

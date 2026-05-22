@@ -41,6 +41,7 @@ applied-analysis/
 - `examples/kidney_transplant_signal_comparison/` is the comparison example and shows how two public system signals can be interpreted together.
 - `examples/agriculture_system_pressure_africa/` extends the pattern into threshold detection with an Africa-focused agricultural systems example.
 - `examples/ssa_agricultural_capital_pressure/` adds contextual events and capital-cost context on top of threshold windows for Sub-Saharan Africa.
+- `examples/token_economics_orchestration/` applies the comparison-plus-threshold pattern to AI token pricing, task complexity, orchestration overhead, and event context.
 - `src/` is reserved for simple reusable components once multiple examples need them.
 
 ## First Example: Trend Signal
@@ -98,6 +99,21 @@ Run it with:
 ```bash
 python3 -m pip install -r requirements.txt
 python3 examples/ssa_agricultural_capital_pressure/ssa_agricultural_capital_pressure.py
+```
+
+## Fifth Example: Token Economics and Orchestration Inflation
+
+`examples/token_economics_orchestration/` asks:
+
+Are falling token prices reducing cost per task, or are agents and orchestration increasing token usage enough to offset the savings?
+
+It combines public pricing anchors with transparent scenario assumptions for task token usage, cache reuse, and orchestration patterns. The output compares token price direction with token usage direction, detects threshold windows, overlays market events, and explains the workflow-level implication in plain language.
+
+Run it with:
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 examples/token_economics_orchestration/token_economics_orchestration.py
 ```
 
 ## Future Direction
