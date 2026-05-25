@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  </head>
+  <body>
+    <main class="page-content">
+      {{ content }}
+    </main>
+
+    {% if page.comments != false %}
+    <section class="comments">
+      <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+        data-repo="ryan-kirk/applied-analysis"
+        data-repo-id="R_kgDOSI613w"
+        data-category="General"
+        data-category-id="DIC_kwDOSI61384C7YIw"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </section>
+    {% endif %}
+  </body>
+</html>
