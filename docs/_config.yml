@@ -1,0 +1,8 @@
+title: Applied Analysis
+description: Practical, public-facing analytical examples
+theme: minima
+url: https://ryan-kirk.github.io
+baseurl: /applied-analysis
+markdown: kramdown
+plugins:
+  - jekyll-feed
