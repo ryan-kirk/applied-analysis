@@ -1,8 +1,10 @@
 ---
-title: When Cheap Tokens Get Expensive
+title: When Cheap Tokens Get Expensive: The Hidden Cost of Agentic Workflows
 comments: true
 excerpt: Falling token prices can make unit inference cheaper while agentic workflows still become more token-hungry. This post explains the conflict between lower list prices and higher orchestration-driven token usage.
 ---
+
+![Four-panel chart showing token list prices, token usage per task, orchestration inflation, net task cost after cache, and event overlays]({{ '/assets/images/token-economics-orchestration.png' | relative_url }})
 
 Falling token prices are real. But lower unit prices do not automatically mean AI work gets proportionally cheaper once workflows become multi-step, retrieval-heavy, and loop-driven.
 
