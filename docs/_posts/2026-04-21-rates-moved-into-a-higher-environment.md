@@ -2,6 +2,8 @@
 title: How a Higher-Rate Environment Showed Up in the 10-Year Treasury
 comments: true
 excerpt: A simple time-series example showing how the 10-year Treasury rate moved from a low-rate environment into a meaningfully higher-rate environment.
+image: /assets/images/trend-signal.png
+image_alt: Line chart of the 10-year Treasury rate from 2021 to 2024.
 ---
 
 ![Line chart of the 10-year Treasury rate from 2021 to 2024]({{ '/assets/images/trend-signal.png' | relative_url }})

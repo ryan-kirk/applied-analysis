@@ -2,6 +2,8 @@
 title: More Kidney Transplants, But Persistent Waitlist Pressure
 comments: true
 excerpt: A healthcare systems comparison showing that transplant volume improved while demand pressure remained larger and persistent.
+image: /assets/images/kidney-transplant-signal-comparison.png
+image_alt: Line chart of kidney transplants and kidney waitlist additions.
 ---
 
 ![Line chart of kidney transplants and kidney waitlist additions]({{ '/assets/images/kidney-transplant-signal-comparison.png' | relative_url }})

@@ -2,6 +2,8 @@
 title: What Events and Capital Costs Reveal About Food-System Pressure in Sub-Saharan Africa
 comments: true
 excerpt: An event-aware threshold example showing how imported-food pressure windows can be read alongside curated shocks and a capital-cost proxy.
+image: /assets/images/ssa-agricultural-capital-pressure.png
+image_alt: Two-panel chart of agriculture value added, food imports, population, imported share, capital proxy, and event overlays.
 ---
 
 ![Two-panel chart of agriculture value added, food imports, population, imported share, capital proxy, and event overlays]({{ '/assets/images/ssa-agricultural-capital-pressure.png' | relative_url }})

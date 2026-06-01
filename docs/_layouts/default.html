@@ -21,15 +21,16 @@
       }
 
       .site-header {
-        padding: 28px 0 18px;
+        padding: 30px 0 20px;
         border-bottom: 1px solid #d6d3d1;
         margin-bottom: 28px;
       }
 
       .site-title {
         margin: 0;
-        font-size: 1.9rem;
-        line-height: 1.15;
+        font-size: 2.05rem;
+        line-height: 1.08;
+        letter-spacing: -0.03em;
       }
 
       .site-title a,
@@ -40,15 +41,97 @@
       }
 
       .site-tagline {
-        margin: 8px 0 0;
+        margin: 10px 0 0;
         color: #57534e;
-        font-size: 0.98rem;
+        font-size: 1rem;
+        max-width: 42rem;
+      }
+
+      .home-intro {
+        margin-bottom: 2.5rem;
+      }
+
+      .home-kicker {
+        margin: 0 0 0.4rem;
+        font-size: 0.84rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #0f4c5c;
+      }
+
+      .home-title {
+        margin: 0 0 0.75rem;
+        font-size: 2.4rem;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        color: #1f2937;
+      }
+
+      .home-summary {
+        margin: 0;
+        font-size: 1.08rem;
+        color: #44403c;
+        max-width: 44rem;
       }
 
       .post-meta {
         color: #6b7280;
         font-size: 0.95rem;
         margin-bottom: 1.4rem;
+      }
+
+      .post-list {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .post-card {
+        display: grid;
+        grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+        gap: 1rem 1.25rem;
+        align-items: start;
+        padding: 1rem 0 1.5rem;
+        border-top: 1px solid #e7e5e4;
+      }
+
+      .post-card:first-child {
+        border-top: none;
+        padding-top: 0.25rem;
+      }
+
+      .post-card-image-link {
+        display: block;
+      }
+
+      .post-card-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid #d6d3d1;
+        background: white;
+      }
+
+      .post-card-body {
+        min-width: 0;
+      }
+
+      .post-card-date {
+        margin: 0 0 0.35rem;
+        color: #6b7280;
+        font-size: 0.92rem;
+      }
+
+      .post-card-title {
+        margin: 0 0 0.5rem;
+        font-size: 1.85rem;
+        line-height: 1.18;
+      }
+
+      .post-card-excerpt {
+        margin: 0;
+        color: #292524;
+        font-size: 1.02rem;
       }
 
       .post-content img {
@@ -71,6 +154,24 @@
         color: #6b7280;
         font-size: 0.92rem;
       }
+
+      @media (max-width: 720px) {
+        .site-title {
+          font-size: 1.8rem;
+        }
+
+        .home-title {
+          font-size: 1.9rem;
+        }
+
+        .post-card {
+          grid-template-columns: 1fr;
+        }
+
+        .post-card-title {
+          font-size: 1.55rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -86,7 +187,7 @@
           <p><a class="home-link" href="{{ '/' | relative_url }}">Back to all posts</a></p>
           {% endif %}
 
-          {% if page.title %}
+          {% if page.title and page.url != '/' %}
           <h1>{{ page.title }}</h1>
           {% endif %}
 

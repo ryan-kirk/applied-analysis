@@ -2,6 +2,8 @@
 title: When Food Imports Became a System Pressure Signal in Sub-Saharan Africa
 comments: true
 excerpt: A threshold-detection example showing that imported food became a meaningfully larger share of the regional system during sustained periods in the 2010s.
+image: /assets/images/agriculture-system-pressure-africa.png
+image_alt: Two-panel chart of agriculture value added, estimated food imports, population, and imported-food threshold crossings.
 ---
 
 ![Two-panel chart of Sub-Saharan Africa agriculture value added, estimated food imports, population, and imported-food threshold crossings]({{ '/assets/images/agriculture-system-pressure-africa.png' | relative_url }})
