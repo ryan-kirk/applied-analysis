@@ -26,6 +26,24 @@
         margin-bottom: 28px;
       }
 
+      .site-header-inner {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem 1.5rem;
+        align-items: start;
+      }
+
+      .site-header-mark {
+        width: 3px;
+        min-height: 68px;
+        background: linear-gradient(180deg, #0f4c5c 0%, #7c6f64 100%);
+        border-radius: 999px;
+      }
+
+      .site-header-copy {
+        min-width: 0;
+      }
+
       .site-title {
         margin: 0;
         font-size: 2.05rem;
@@ -47,8 +65,49 @@
         max-width: 42rem;
       }
 
-      .home-intro {
+      .author-intro {
         margin-bottom: 2.5rem;
+      }
+
+      .author-profile {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: 1.25rem 1.5rem;
+        align-items: center;
+        padding: 1.25rem 0 0.5rem;
+      }
+
+      .author-headshot {
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #d6d3d1;
+        background: white;
+        display: block;
+      }
+
+      .author-copy {
+        min-width: 0;
+      }
+
+      .author-qr-card {
+        text-align: center;
+      }
+
+      .author-qr {
+        width: 104px;
+        height: 104px;
+        display: block;
+        margin: 0 auto 0.45rem;
+        border: 1px solid #d6d3d1;
+        background: white;
+      }
+
+      .author-qr-caption {
+        margin: 0;
+        font-size: 0.84rem;
+        color: #6b7280;
       }
 
       .home-kicker {
@@ -156,12 +215,31 @@
       }
 
       @media (max-width: 720px) {
+        .site-header-inner {
+          grid-template-columns: 1fr;
+          gap: 0.75rem;
+        }
+
+        .site-header-mark {
+          width: 64px;
+          min-height: 3px;
+        }
+
         .site-title {
           font-size: 1.8rem;
         }
 
         .home-title {
           font-size: 1.9rem;
+        }
+
+        .author-profile {
+          grid-template-columns: 1fr;
+          justify-items: start;
+        }
+
+        .author-qr-card {
+          text-align: left;
         }
 
         .post-card {
@@ -177,8 +255,13 @@
   <body>
     <div class="site-shell">
       <header class="site-header">
-        <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-        <p class="site-tagline">{{ site.description }}</p>
+        <div class="site-header-inner">
+          <div class="site-header-mark" aria-hidden="true"></div>
+          <div class="site-header-copy">
+            <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <p class="site-tagline">{{ site.description }}</p>
+          </div>
+        </div>
       </header>
 
       <main class="page-content">

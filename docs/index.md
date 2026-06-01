@@ -3,10 +3,19 @@ title: Home
 comments: false
 ---
 
-<section class="home-intro">
-	<p class="home-kicker">Signal-first analysis</p>
-	<h2 class="home-title">Small public write-ups that turn data into something easier to notice and explain.</h2>
-	<p class="home-summary">Applied Analysis is a small public collection of practical analytical examples. Each post starts with a real question, looks for the signal that matters, and explains the result in plain language.</p>
+<section class="author-intro">
+	<div class="author-profile">
+		<img class="author-headshot" src="{{ '/assets/images/ryan-kirk-headshot-circle.png' | relative_url }}" alt="Ryan Kirk headshot">
+		<div class="author-copy">
+			<p class="home-kicker">About the author</p>
+			<h2 class="home-title">Ryan Kirk</h2>
+			<p class="home-summary">Ryan Kirk is a digital agriculture and applied AI leader focused on turning advanced technology into practical decision support. As former Head of Data Science at John Deere and a PhD in Human-Computer Interaction, he works at the intersection of analytics, product judgment, and real-world decision systems.</p>
+		</div>
+		<div class="author-qr-card">
+			<img class="author-qr" src="{{ '/assets/images/ryan-kirk-qr.png' | relative_url }}" alt="QR code for Ryan Kirk contact link">
+			<p class="author-qr-caption">Connect with Ryan</p>
+		</div>
+	</div>
 </section>
 
 ## Latest Posts
@@ -34,4 +43,4 @@ comments: false
 
 ## About This Site
 
-This site extends the repository with a lightweight blog-style layer for shareable write-ups. Posts summarize individual examples, keep the interpretation public and educational, and use GitHub Discussions via giscus for comments.
+This site extends the repository with a lightweight blog-style layer for shareable write-ups. Posts summarize individual examples, keep the interpretation public and educational, and use GitHub Discussions via giscus for comments. The source repository lives at <a href="https://github.com/ryan-kirk/applied-analysis">github.com/ryan-kirk/applied-analysis</a>.
