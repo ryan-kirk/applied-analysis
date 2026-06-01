@@ -4,5 +4,19 @@ theme: minima
 url: https://ryan-kirk.github.io
 baseurl: /applied-analysis
 markdown: kramdown
+permalink: pretty
+show_excerpts: true
 plugins:
   - jekyll-feed
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: default
+      comments: true
+  - scope:
+      path: ""
+    values:
+      layout: default
+      comments: false
