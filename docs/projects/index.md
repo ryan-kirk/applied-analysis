@@ -1,9 +1,9 @@
 ---
-title: Projects
+title: Portfolio
 comments: false
 ---
 
-This page collects application profiles from the portfolio. Each profile is designed to explain what the application does, how it works, and what technical capability it demonstrates.
+This page collects the application profiles in the portfolio. Each entry is designed to explain what the application does, how it works, and what technical capability it demonstrates.
 
 <section class="project-list">
 	{% assign projects = site.projects | sort: 'order' %}

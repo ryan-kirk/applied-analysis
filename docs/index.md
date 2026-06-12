@@ -6,31 +6,16 @@ comments: false
 <section class="home-positioning">
 	<p class="home-positioning-kicker">Applied AI, analytics, and decision support</p>
 	<h2 class="home-positioning-title">A working portfolio of analytical systems, public case studies, and practical software.</h2>
-	<p class="home-positioning-copy">This site highlights how Ryan Kirk approaches real-world problems: define the decision, extract the signal, make the system legible, and turn technical work into something decision-makers can actually use.</p>
+	<p class="home-positioning-copy">This homepage now acts as a working feed: recent portfolio entries, recent case studies, and the latest examples of how Ryan Kirk turns technical systems into usable decision support.</p>
 </section>
 
-<section class="author-intro">
-	<div class="author-profile">
-		<img class="author-headshot" src="{{ '/assets/images/ryan-kirk-headshot-circle.png' | relative_url }}" alt="Ryan Kirk headshot">
-		<div class="author-copy">
-			<p class="home-kicker">About the author</p>
-			<h2 class="home-title">Ryan Kirk</h2>
-			<p class="home-summary">Ryan Kirk works at the intersection of applied AI, analytics, product judgment, and operational decision support. As former Head of Data Science at John Deere and a PhD in Human-Computer Interaction, he focuses on turning complex technical systems into clear tools, signals, and workflows that help organizations decide with more confidence.</p>
-		</div>
-		<div class="author-qr-card">
-			<img class="author-qr" src="{{ '/assets/images/ryan-kirk-qr.png' | relative_url }}" alt="QR code for Ryan Kirk contact link">
-			<p class="author-qr-caption">Connect with Ryan</p>
-		</div>
-	</div>
-</section>
+## Recent Portfolio Entries
 
-## Selected Projects
-
-<p class="section-intro">Selected applications across analytics, decision support, geospatial exploration, research tooling, and workflow design.</p>
+<p class="section-intro">The latest application profiles across analytics, decision support, geospatial exploration, research tooling, and workflow design.</p>
 
 <section class="project-list">
 	{% assign projects = site.projects | sort: 'order' %}
-	{% for project in projects %}
+	{% for project in projects limit: 4 %}
 	<article class="project-card">
 		<a class="project-card-media" href="{{ project.url | relative_url }}">
 			{% if project.image %}
@@ -54,14 +39,15 @@ comments: false
 	</article>
 	{% endfor %}
 </section>
+<p class="section-link-row"><a href="{{ '/projects/' | relative_url }}">See all</a></p>
 
-## Recent Case Studies
+## Latest Case Studies
 
-<p class="section-intro">Public write-ups drawn from the Applied Analysis work. They remain available as examples, but the main purpose of the site is to show the thinking, framing, and implementation behind the work.</p>
+<p class="section-intro">Recent blog-style case studies drawn from the portfolio work, with public write-ups that explain the framing, signal, and practical takeaway.</p>
 
 <section class="post-list">
 	{% if site.posts.size > 0 %}
-	{% for post in site.posts %}
+	{% for post in site.posts limit: 4 %}
 	<article class="post-card">
 		{% if post.image %}
 		<a class="post-card-image-link" href="{{ post.url | relative_url }}">
@@ -79,7 +65,4 @@ comments: false
 	<p>No posts published yet.</p>
 	{% endif %}
 </section>
-
-## About This Site
-
-This site functions as a portfolio layer on top of the repository: project pages describe the applications themselves, and posts provide short public-facing case studies drawn from selected examples. Comments are available if someone wants to respond to a post, but interaction is optional. The primary goal is to make the work easy to review, understand, and discuss.
+<p class="section-link-row"><a href="{{ '/blog/' | relative_url }}">See all</a></p>

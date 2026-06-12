@@ -204,6 +204,15 @@
         font-size: 1rem;
       }
 
+      .section-link-row {
+        margin: -1.25rem 0 3rem;
+        font-size: 0.98rem;
+      }
+
+      .section-link-row a {
+        color: #0f4c5c;
+      }
+
       .project-list {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -557,7 +566,9 @@
             <p class="aa-site-tagline">{{ site.description }}</p>
             <nav class="aa-site-nav" aria-label="Primary">
               <a href="{{ '/' | relative_url }}">Home</a>
-              <a href="{{ '/projects/' | relative_url }}">Projects</a>
+              <a href="{{ '/projects/' | relative_url }}">Portfolio</a>
+              <a href="{{ '/blog/' | relative_url }}">Blog</a>
+              <a href="{{ '/about/' | relative_url }}">About</a>
               <a href="{{ '/terms/' | relative_url }}">Terms</a>
             </nav>
           </div>
@@ -567,8 +578,10 @@
       <main class="aa-page-content">
         <article class="aa-post-content">
           {% if page.collection == 'projects' %}
-          <p><a class="home-link" href="{{ '/projects/' | relative_url }}">Back to projects</a></p>
-          {% elsif page.url != '/' %}
+          <p><a class="home-link" href="{{ '/projects/' | relative_url }}">Back to portfolio</a></p>
+          {% elsif page.collection == 'posts' %}
+          <p><a class="home-link" href="{{ '/blog/' | relative_url }}">Back to blog</a></p>
+          {% elsif page.url != '/' and page.url != '/about/' and page.url != '/blog/' and page.url != '/projects/' and page.url != '/terms/' %}
           <p><a class="home-link" href="{{ '/' | relative_url }}">Back to home</a></p>
           {% endif %}
 
