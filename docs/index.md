@@ -26,13 +26,14 @@ comments: false
 
 ## Selected Projects
 
-<p class="section-intro">Repository profiles that describe what each application does, how it is structured, and where it fits inside the broader portfolio.</p>
+<p class="section-intro">Repository profiles that describe what each application does, how it is structured, and where it fits inside the broader portfolio. This working set currently includes both public projects and provisional private entries for review.</p>
 
 <section class="project-list">
 	{% assign projects = site.projects | sort: 'order' %}
 	{% for project in projects %}
 	<article class="project-card">
 		<p class="project-card-kicker">{{ project.category_label | default: 'Project' }}</p>
+		<p class="project-card-meta">{{ project.access_label | default: 'Public repository' }}</p>
 		<h3 class="project-card-title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
 		<p class="project-card-summary">{{ project.summary }}</p>
 		<p class="project-card-links">

@@ -36,6 +36,7 @@ There is no custom website build pipeline checked into this repository. The curr
 - `docs/_projects/`
   - Contains one Markdown file per portfolio project or repository profile.
   - Each project page can carry its own summary, category label, order, and repository link.
+  - The current project set includes both public repositories and provisional private placeholders pending review.
 
 - `docs/projects/index.md`
   - Serves as the portfolio index page for repository-level project profiles.
@@ -107,7 +108,7 @@ At the time of this review, the site contains:
 
 - 1 home page: `docs/index.md`
 - 1 project index page: `docs/projects/index.md`
-- 1 project profile in `docs/_projects/`
+- 17 project profiles in `docs/_projects/`
 - 6 published posts in `docs/_posts/`
 - 8 images in `docs/assets/images/`
 

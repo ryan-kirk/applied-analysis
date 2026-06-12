@@ -226,6 +226,12 @@
         text-transform: uppercase;
       }
 
+      .project-card-meta {
+        margin: 0 0 0.55rem;
+        color: #8b7d71;
+        font-size: 0.85rem;
+      }
+
       .project-card-title {
         margin: 0 0 0.6rem;
         font-size: 1.6rem;
@@ -245,6 +251,54 @@
 
       .project-card-links a + a {
         margin-left: 1rem;
+      }
+
+      .project-meta {
+        margin: 0 0 1.5rem;
+        color: #6b7280;
+        font-size: 0.96rem;
+      }
+
+      .project-meta a {
+        color: #0f4c5c;
+      }
+
+      .capability-list {
+        margin: 0 0 1.75rem 1.2rem;
+      }
+
+      .screenshot-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.25rem;
+      }
+
+      .screenshot-placeholder {
+        padding: 1rem 1rem 1.1rem;
+        border: 1px dashed #b8b1aa;
+        background: rgba(255, 255, 255, 0.55);
+      }
+
+      .screenshot-placeholder-label {
+        margin: 0 0 0.35rem;
+        color: #0f4c5c;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .screenshot-placeholder-title {
+        margin: 0 0 0.35rem;
+        font-size: 1.2rem;
+        line-height: 1.15;
+      }
+
+      .screenshot-placeholder-copy {
+        margin: 0;
+        color: #57534e;
+        font-size: 0.98rem;
       }
 
       .aa-post-meta {
@@ -389,6 +443,10 @@
         }
 
         .project-list {
+          grid-template-columns: 1fr;
+        }
+
+        .screenshot-grid {
           grid-template-columns: 1fr;
         }
       }

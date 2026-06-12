@@ -1,48 +1,57 @@
 ---
 title: Applied Analysis
 category_label: Analytics Portfolio
+access_label: Public repository
 summary: Decision-oriented analytical case studies and reusable Python components for identifying changes, thresholds, and operational pressure in real-world systems.
 repo_url: https://github.com/ryan-kirk/applied-analysis
 order: 10
 comments: false
 ---
 
-Applied Analysis is a portfolio repository built around a simple pattern: take a dataset, identify what is changing, extract the useful signal, and explain why that signal matters in plain language.
+<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/applied-analysis">github.com/ryan-kirk/applied-analysis</a><br><strong>Access:</strong> Public repository</p>
 
-## What It Does
+## Goal
 
-The repository combines public-facing analytical examples with lightweight reusable Python components. Each example is designed to move beyond raw charts into a decision-support interpretation.
+Applied Analysis is built to show how small, transparent analytical systems can turn raw data into clearer decisions. The repository acts as both a public portfolio and a working sandbox for decision-support analysis.
 
-Current capabilities include:
+## Functionality
 
-- directional trend analysis
-- signal comparison across related series
-- threshold detection
-- contextual event overlays
-- multi-signal consistency analysis
-- plain-language summaries that connect the math to the decision
+The current repository organizes examples around a repeatable pattern: identify what changed, extract the signal worth noticing, and explain what that means in plain language.
 
-## How It Is Structured
+Current functionality includes:
 
-- `examples/` contains the example analyses, source data, output images, and insight write-ups
-- `src/applied_analysis/` contains reusable analytical components shared across examples
-- `docs/` contains the GitHub Pages portfolio and case-study layer
-- `tests/` covers the shared analytical logic
+- trend analysis for directional changes over time
+- comparison of related system signals
+- threshold and pressure-window detection
+- contextual event overlays for interpretation
+- public-facing case-study posts derived from the example outputs
 
-## Why It Matters
+## Technical Capabilities
 
-This repository shows a style of work that is useful in consulting, applied research, and product strategy settings: make a complex system easier to reason about without hiding the mechanics. The examples are intentionally compact, but they demonstrate how to frame a question, build a transparent analytical method, and communicate the result clearly.
+The technical profile of the repository currently includes:
 
-## Representative Use Cases
+<ul class="capability-list">
+  <li>Python-based analytical examples with lightweight reusable modules in <code>src/applied_analysis/</code></li>
+  <li>Simple test coverage for the shared analytical logic in <code>tests/</code></li>
+  <li>Static GitHub Pages portfolio built from the <code>docs/</code> folder with Jekyll</li>
+  <li>A case-study publishing workflow that connects repository examples to public write-ups and chart assets</li>
+</ul>
 
-- translating a noisy time series into a practical directional signal
-- comparing supply and demand indicators within constrained systems
-- detecting when a system crosses from normal variation into meaningful pressure
-- layering domain events onto quantitative signals to improve interpretation
-- turning analytical outputs into shareable public case studies
+## Screenshot Placeholders
 
-## Repository Links
+<section class="screenshot-grid">
+  <article class="screenshot-placeholder">
+    <p class="screenshot-placeholder-label">Placeholder</p>
+    <h3 class="screenshot-placeholder-title">Homepage / Portfolio View</h3>
+    <p class="screenshot-placeholder-copy">Capture the public site homepage showing the positioning statement, selected projects, and recent case studies.</p>
+  </article>
+  <article class="screenshot-placeholder">
+    <p class="screenshot-placeholder-label">Placeholder</p>
+    <h3 class="screenshot-placeholder-title">Representative Analytical Output</h3>
+    <p class="screenshot-placeholder-copy">Add a chart or multi-panel output that best represents how the repository turns data into an interpretable signal.</p>
+  </article>
+</section>
 
-- [Source repository](https://github.com/ryan-kirk/applied-analysis)
-- [Homepage]({{ '/' | relative_url }})
-- [Project list]({{ '/projects/' | relative_url }})
+## Notes
+
+This project is the anchor for the current website and now serves as the template for how other repository-level portfolio pages can be described.
