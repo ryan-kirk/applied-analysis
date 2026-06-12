@@ -3,13 +3,19 @@ title: Home
 comments: false
 ---
 
+<section class="home-positioning">
+	<p class="home-positioning-kicker">Applied AI, analytics, and decision support</p>
+	<h2 class="home-positioning-title">A working portfolio of analytical systems, public case studies, and practical software.</h2>
+	<p class="home-positioning-copy">This site highlights how Ryan Kirk approaches real-world problems: define the decision, extract the signal, make the system legible, and turn technical work into something decision-makers can actually use.</p>
+</section>
+
 <section class="author-intro">
 	<div class="author-profile">
 		<img class="author-headshot" src="{{ '/assets/images/ryan-kirk-headshot-circle.png' | relative_url }}" alt="Ryan Kirk headshot">
 		<div class="author-copy">
 			<p class="home-kicker">About the author</p>
 			<h2 class="home-title">Ryan Kirk</h2>
-			<p class="home-summary">Ryan Kirk is a digital agriculture and applied AI leader focused on turning advanced technology into practical decision support. As former Head of Data Science at John Deere and a PhD in Human-Computer Interaction, he works at the intersection of analytics, product judgment, and real-world decision systems.</p>
+			<p class="home-summary">Ryan Kirk works at the intersection of applied AI, analytics, product judgment, and operational decision support. As former Head of Data Science at John Deere and a PhD in Human-Computer Interaction, he focuses on turning complex technical systems into clear tools, signals, and workflows that help organizations decide with more confidence.</p>
 		</div>
 		<div class="author-qr-card">
 			<img class="author-qr" src="{{ '/assets/images/ryan-kirk-qr.png' | relative_url }}" alt="QR code for Ryan Kirk contact link">
@@ -18,7 +24,28 @@ comments: false
 	</div>
 </section>
 
-## Latest Posts
+## Selected Projects
+
+<p class="section-intro">Repository profiles that describe what each application does, how it is structured, and where it fits inside the broader portfolio.</p>
+
+<section class="project-list">
+	{% assign projects = site.projects | sort: 'order' %}
+	{% for project in projects %}
+	<article class="project-card">
+		<p class="project-card-kicker">{{ project.category_label | default: 'Project' }}</p>
+		<h3 class="project-card-title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+		<p class="project-card-summary">{{ project.summary }}</p>
+		<p class="project-card-links">
+			<a href="{{ project.url | relative_url }}">Project profile</a>
+			{% if project.repo_url %}<a href="{{ project.repo_url }}">Repository</a>{% endif %}
+		</p>
+	</article>
+	{% endfor %}
+</section>
+
+## Recent Case Studies
+
+<p class="section-intro">Public write-ups drawn from the Applied Analysis work. They remain available as examples, but the main purpose of the site is to show the thinking, framing, and implementation behind the work.</p>
 
 <section class="post-list">
 	{% if site.posts.size > 0 %}
@@ -43,4 +70,4 @@ comments: false
 
 ## About This Site
 
-This site extends the repository with a lightweight blog-style layer for shareable write-ups. Posts summarize individual examples, keep the interpretation public and educational, and use GitHub Discussions via giscus for comments. The source repository lives at <a href="https://github.com/ryan-kirk/applied-analysis">github.com/ryan-kirk/applied-analysis</a>.
+This site functions as a portfolio layer on top of the repository: project pages describe the applications themselves, and posts provide short public-facing case studies drawn from selected examples. Comments are available if someone wants to respond to a post, but interaction is optional. The primary goal is to make the work easy to review, understand, and discuss.

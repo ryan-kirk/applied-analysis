@@ -42,6 +42,7 @@ applied-analysis/
 - `examples/agriculture_system_pressure_africa/` extends the pattern into threshold detection with an Africa-focused agricultural systems example.
 - `examples/ssa_agricultural_capital_pressure/` adds contextual events and capital-cost context on top of threshold windows for Sub-Saharan Africa.
 - `examples/token_economics_orchestration/` applies the comparison-plus-threshold pattern to AI token pricing, task complexity, orchestration overhead, and event context.
+- `examples/ai_compute_constraints/` applies divergence and consistency analysis to AI infrastructure demand, compute, memory, storage, and power.
 - `src/` is reserved for simple reusable components once multiple examples need them.
 
 ## First Example: Trend Signal
@@ -116,6 +117,25 @@ python3 -m pip install -r requirements.txt
 python3 examples/token_economics_orchestration/token_economics_orchestration.py
 ```
 
+## Sixth Example: AI Infrastructure Constraints
+
+`examples/ai_compute_constraints/` asks:
+
+Can AI infrastructure keep up with growing AI demand?
+
+It uses indexed demand and infrastructure signals to compare AI demand with GPU supply, HBM supply, storage capacity, and datacenter power capacity. The output adds reusable multi-signal consistency analysis on top of the earlier comparison and threshold pattern, then highlights resource pressure windows, potential constraint periods, and event context.
+
+Run it with:
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 examples/ai_compute_constraints/ai_compute_constraints.py
+```
+
+Current result in this example:
+
+AI demand and infrastructure supply all rise, but they do not rise at the same rate. The strongest descriptive constraint signal comes from power, with memory also lagging enough to create divergence windows even while overall compute supply keeps growing.
+
 ## Future Direction
 
 The early goal is to build a small set of examples that translate data into useful interpretations.
@@ -138,3 +158,16 @@ The goal is to build examples that focus on:
 - how to interpret it clearly
 
 Not all ideas will be implemented, but thoughtful suggestions are welcome.
+
+## Website Post Workflow
+
+Each major example can also be surfaced as a short public-facing post on the GitHub Pages site.
+
+Current approach:
+
+- keep the full analysis source of truth in `examples/<example_name>/`
+- create a concise companion post in `docs/_posts/`
+- copy the example chart into `docs/assets/images/` so the site owns the preview image
+- link each post back to the example folder and its insight document in the repository
+
+This keeps the repository explanation-first while making each example easy to browse as a lightweight public post.

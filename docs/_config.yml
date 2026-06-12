@@ -1,5 +1,5 @@
 title: Applied Analysis
-description: Public examples that help people notice what is changing, understand why it matters, and act with more confidence.
+description: Selected analytical case studies, software projects, and applied AI work by Ryan Kirk.
 theme: minima
 url: https://ryan-kirk.github.io
 baseurl: /applied-analysis
@@ -8,6 +8,10 @@ permalink: pretty
 show_excerpts: true
 plugins:
   - jekyll-feed
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
 defaults:
   - scope:
       path: ""
@@ -15,6 +19,12 @@ defaults:
     values:
       layout: default
       comments: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: default
+      comments: false
   - scope:
       path: ""
     values:

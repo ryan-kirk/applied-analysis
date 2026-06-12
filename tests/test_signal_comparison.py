@@ -12,6 +12,7 @@ if str(SRC) not in sys.path:
 from applied_analysis.signal_comparison import (
     classify_trend_direction,
     compare_signal_directions,
+    compare_trend_consistency,
 )
 
 
@@ -58,6 +59,51 @@ class SignalComparisonTests(unittest.TestCase):
         )
 
         self.assertEqual(result["relationship"], "mixed conditions")
+
+    def test_classifies_consistent_multi_signal_growth(self):
+        result = compare_trend_consistency(
+            {
+                "ai_demand_index": 1.2,
+                "gpu_supply_index": 1.08,
+                "memory_supply_index": 1.03,
+                "power_supply_index": 0.98,
+            },
+            demand_signal="ai_demand_index",
+        )
+
+        self.assertEqual(result["classification"], "consistent")
+        self.assertGreater(result["consistency_score"], 0.7)
+        self.assertIsNone(result["strongest_constraint"])
+
+    def test_flags_pressured_system_when_one_resource_lags_demand(self):
+        result = compare_trend_consistency(
+            {
+                "ai_demand_index": 1.0,
+                "gpu_supply_index": 0.8,
+                "memory_supply_index": 0.62,
+                "power_supply_index": 0.78,
+            },
+            demand_signal="ai_demand_index",
+        )
+
+        self.assertEqual(result["classification"], "pressured")
+        self.assertIn("memory_supply_index", result["lagging_signals"])
+        self.assertEqual(result["strongest_constraint"], "memory_supply_index")
+
+    def test_flags_diverging_when_bottleneck_gap_is_severe(self):
+        result = compare_trend_consistency(
+            {
+                "ai_demand_index": 1.1,
+                "gpu_supply_index": 0.7,
+                "memory_supply_index": 0.45,
+                "power_supply_index": 0.4,
+            },
+            demand_signal="ai_demand_index",
+        )
+
+        self.assertEqual(result["classification"], "diverging")
+        self.assertEqual(result["strongest_constraint"], "power_supply_index")
+        self.assertLess(result["consistency_score"], 0.6)
 
 
 if __name__ == "__main__":

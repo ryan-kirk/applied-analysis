@@ -5,3 +5,5 @@ __pycache__/
 # Local development guidance and source material.
 STRATEGY.md
 everyday-analyst/
+
+ai_compute.md

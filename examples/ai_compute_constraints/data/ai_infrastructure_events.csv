@@ -1,0 +1,6 @@
+event_date,event_name,event_type,description,source
+2022-11-30,ChatGPT public launch,demand,"Public launch accelerated mainstream experimentation and inference demand.",https://openai.com/blog/chatgpt
+2023-03-22,H100 deployment cycle,compute,"The H100 platform became the reference hardware cycle for frontier AI training and inference buildouts.",https://www.nvidia.com/en-us/data-center/h100/
+2024-03-18,Blackwell announcement,compute,"Blackwell signaled another step-up in datacenter AI infrastructure expectations.",https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/
+2024-05-14,Hyperscaler AI capex wave,investment,"Large cloud providers signaled continued datacenter and AI infrastructure investment.",https://www.microsoft.com/en-us/investor
+2025-04-10,Datacenter power warning,power,"Public analysis highlighted datacenter electricity demand as a meaningful AI constraint.",https://www.iea.org/

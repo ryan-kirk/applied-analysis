@@ -1,0 +1,1 @@
+See [INSIGHT.md](./INSIGHT.md) for the canonical analysis narrative.

@@ -14,59 +14,122 @@
         line-height: 1.6;
       }
 
-      .site-shell {
-        max-width: 760px;
+      .aa-shell {
+        max-width: 1040px;
         margin: 0 auto;
-        padding: 0 20px 48px;
+        padding: 0 28px 56px;
       }
 
-      .site-header {
-        padding: 30px 0 20px;
+      .aa-header {
+        padding: 38px 0 22px;
         border-bottom: 1px solid #d6d3d1;
-        margin-bottom: 28px;
+        margin-bottom: 36px;
       }
 
-      .site-header-inner {
+      .aa-header-inner {
         display: grid;
         grid-template-columns: auto 1fr;
-        gap: 1rem 1.5rem;
+        gap: 1.25rem 1.75rem;
         align-items: start;
       }
 
-      .site-header-mark {
+      .aa-header-mark {
         width: 3px;
-        min-height: 68px;
+        min-height: 112px;
         background: linear-gradient(180deg, #0f4c5c 0%, #7c6f64 100%);
         border-radius: 999px;
       }
 
-      .site-header-copy {
+      .aa-header-copy {
         min-width: 0;
+        display: grid;
+        gap: 0.7rem;
       }
 
-      .site-title {
+      .aa-site-title {
         margin: 0;
-        font-size: 2.05rem;
-        line-height: 1.08;
+        font-size: clamp(2.55rem, 4vw, 4.35rem);
+        line-height: 0.98;
         letter-spacing: -0.03em;
+        display: block;
+        float: none;
+        clear: both;
       }
 
-      .site-title a,
+      .aa-site-title a,
       .home-link,
       article a,
       main a {
         color: #0f4c5c;
       }
 
-      .site-tagline {
-        margin: 10px 0 0;
+      .aa-site-title a {
+        text-decoration: none;
+      }
+
+      .aa-site-tagline {
+        margin: 0;
         color: #57534e;
-        font-size: 1rem;
-        max-width: 42rem;
+        font-size: 1.18rem;
+        line-height: 1.45;
+        max-width: 52rem;
+        display: block;
+        float: none;
+        clear: both;
+      }
+
+      .aa-site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem 1.15rem;
+        padding-top: 0.15rem;
+      }
+
+      .aa-site-nav a {
+        color: #0f4c5c;
+        font-size: 0.98rem;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      .aa-site-nav a:hover,
+      .aa-site-nav a:focus-visible {
+        border-bottom-color: currentColor;
       }
 
       .author-intro {
-        margin-bottom: 2.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      .home-positioning {
+        margin-bottom: 3rem;
+        padding: 1.5rem 1.6rem;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(247, 247, 242, 0.96));
+        border: 1px solid #ddd6cf;
+      }
+
+      .home-positioning-kicker {
+        margin: 0 0 0.45rem;
+        font-size: 0.84rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #0f4c5c;
+      }
+
+      .home-positioning-title {
+        margin: 0 0 0.7rem;
+        font-size: clamp(1.9rem, 3vw, 2.7rem);
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        color: #1f2937;
+      }
+
+      .home-positioning-copy {
+        margin: 0;
+        max-width: 48rem;
+        font-size: 1.08rem;
+        color: #44403c;
       }
 
       .author-profile {
@@ -134,7 +197,57 @@
         max-width: 44rem;
       }
 
-      .post-meta {
+      .section-intro {
+        margin: -0.35rem 0 1.35rem;
+        max-width: 42rem;
+        color: #57534e;
+        font-size: 1rem;
+      }
+
+      .project-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
+        margin-bottom: 3.5rem;
+      }
+
+      .project-card {
+        padding: 1.35rem 1.4rem;
+        border: 1px solid #ddd6cf;
+        background: rgba(255, 255, 255, 0.76);
+      }
+
+      .project-card-kicker {
+        margin: 0 0 0.35rem;
+        color: #6b7280;
+        font-size: 0.86rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .project-card-title {
+        margin: 0 0 0.6rem;
+        font-size: 1.6rem;
+        line-height: 1.14;
+      }
+
+      .project-card-summary,
+      .project-card-links {
+        margin: 0;
+        color: #44403c;
+      }
+
+      .project-card-links {
+        margin-top: 0.9rem;
+        font-size: 0.96rem;
+      }
+
+      .project-card-links a + a {
+        margin-left: 1rem;
+      }
+
+      .aa-post-meta {
         color: #6b7280;
         font-size: 0.95rem;
         margin-bottom: 1.4rem;
@@ -200,13 +313,21 @@
         background: white;
       }
 
-      .comments {
+      .aa-page-content {
+        min-width: 0;
+      }
+
+      .aa-post-content {
+        min-width: 0;
+      }
+
+      .aa-comments {
         margin-top: 3rem;
         padding-top: 1.5rem;
         border-top: 1px solid #d6d3d1;
       }
 
-      .site-footer {
+      .aa-footer {
         margin-top: 48px;
         padding-top: 18px;
         border-top: 1px solid #d6d3d1;
@@ -215,22 +336,39 @@
       }
 
       @media (max-width: 720px) {
-        .site-header-inner {
+        .aa-shell {
+          padding: 0 18px 42px;
+        }
+
+        .aa-header {
+          padding: 28px 0 18px;
+          margin-bottom: 26px;
+        }
+
+        .aa-header-inner {
           grid-template-columns: 1fr;
           gap: 0.75rem;
         }
 
-        .site-header-mark {
+        .aa-header-mark {
           width: 64px;
           min-height: 3px;
         }
 
-        .site-title {
-          font-size: 1.8rem;
+        .aa-site-title {
+          font-size: 2.4rem;
+        }
+
+        .aa-site-tagline {
+          font-size: 1rem;
         }
 
         .home-title {
           font-size: 1.9rem;
+        }
+
+        .home-positioning {
+          padding: 1.2rem 1.1rem;
         }
 
         .author-profile {
@@ -249,40 +387,54 @@
         .post-card-title {
           font-size: 1.55rem;
         }
+
+        .project-list {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="site-shell">
-      <header class="site-header">
-        <div class="site-header-inner">
-          <div class="site-header-mark" aria-hidden="true"></div>
-          <div class="site-header-copy">
-            <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-            <p class="site-tagline">{{ site.description }}</p>
+    <div class="aa-shell">
+      <header class="aa-header">
+        <div class="aa-header-inner">
+          <div class="aa-header-mark" aria-hidden="true"></div>
+          <div class="aa-header-copy">
+            <h1 class="aa-site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <p class="aa-site-tagline">{{ site.description }}</p>
+            <nav class="aa-site-nav" aria-label="Primary">
+              <a href="{{ '/' | relative_url }}">Home</a>
+              <a href="{{ '/projects/' | relative_url }}">Projects</a>
+            </nav>
           </div>
         </div>
       </header>
 
-      <main class="page-content">
-        <article class="post-content">
-          {% if page.url != '/' %}
-          <p><a class="home-link" href="{{ '/' | relative_url }}">Back to all posts</a></p>
+      <main class="aa-page-content">
+        <article class="aa-post-content">
+          {% if page.collection == 'projects' %}
+          <p><a class="home-link" href="{{ '/projects/' | relative_url }}">Back to projects</a></p>
+          {% elsif page.url != '/' %}
+          <p><a class="home-link" href="{{ '/' | relative_url }}">Back to home</a></p>
           {% endif %}
 
           {% if page.title and page.url != '/' %}
           <h1>{{ page.title }}</h1>
           {% endif %}
 
+          {% if page.collection == 'projects' and page.summary %}
+          <p class="section-intro">{{ page.summary }}</p>
+          {% endif %}
+
           {% if page.date %}
-          <p class="post-meta">Published {{ page.date | date: "%B %-d, %Y" }}</p>
+          <p class="aa-post-meta">Published {{ page.date | date: "%B %-d, %Y" }}</p>
           {% endif %}
 
           {{ content }}
         </article>
 
         {% if page.comments == true %}
-        <section class="comments">
+        <section class="aa-comments">
           <h2>Comments</h2>
           <script src="https://giscus.app/client.js"
               data-repo="ryan-kirk/applied-analysis"
@@ -303,8 +455,8 @@
         {% endif %}
       </main>
 
-      <footer class="site-footer">
-        Built from the Applied Analysis repository with GitHub Pages and GitHub Discussions.
+      <footer class="aa-footer">
+        Portfolio site built from the Applied Analysis repository with GitHub Pages.
       </footer>
     </div>
   </body>
