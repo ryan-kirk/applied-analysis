@@ -1,18 +1,17 @@
 ---
-title: PDF Extractor
+title: Document Intake Studio
 category_label: Document Processing
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: A document-processing application that extracts information from PDFs, splits them into new documents, and exposes the workflow through a lightweight UI and service endpoint.
-repo_url: https://github.com/ryan-kirk/pdf-extractor
 order: 50
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/pdf-extractor">github.com/ryan-kirk/pdf-extractor</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-PDF Extractor is built to turn unstructured PDF files into more usable documents and metadata so other workflows can search, route, or consume that information more effectively.
+Document Intake Studio is built to turn unstructured PDF files into more usable documents and metadata so other workflows can search, route, or consume that information more effectively.
 
 ## Functionality
 
@@ -50,7 +49,3 @@ The repository description suggests a hybrid processing and integration profile:
     <p class="screenshot-placeholder-copy">Add a screenshot that shows the resulting documents, metadata fields, or API-friendly output.</p>
   </article>
 </section>
-
-## Notes
-
-This portfolio placeholder is based on the current private-repo description and is meant to be refined once you decide how much of the processing workflow should be described publicly.

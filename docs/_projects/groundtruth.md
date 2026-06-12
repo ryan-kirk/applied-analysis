@@ -1,18 +1,17 @@
 ---
-title: GroundTruth
+title: GroundTruth Atlas
 category_label: Geospatial Intelligence
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: A geospatial intelligence application for seeing, contributing, comparing, and learning from agricultural and land-use observations.
-repo_url: https://github.com/ryan-kirk/GroundTruth
 order: 70
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/GroundTruth">github.com/ryan-kirk/GroundTruth</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-GroundTruth is positioned as a geospatial intelligence environment for agricultural and land-use observation, likely aimed at making field signals easier to see, compare, and interpret.
+GroundTruth Atlas is positioned as a geospatial intelligence environment for agricultural and land-use observation, likely aimed at making field signals easier to see, compare, and interpret.
 
 ## Functionality
 
@@ -50,7 +49,3 @@ The current description supports a conservative technical framing:
     <p class="screenshot-placeholder-copy">Add a screenshot of the workflow used to add, inspect, or compare field observations.</p>
   </article>
 </section>
-
-## Notes
-
-This placeholder is based on the short repository description only. It is a strong candidate for a richer portfolio write-up once screenshots and implementation details are ready.

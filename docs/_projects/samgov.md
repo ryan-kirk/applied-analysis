@@ -1,18 +1,17 @@
 ---
-title: SAM.gov Assistant
+title: Opportunity Scout
 category_label: Procurement Search
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: A contract-discovery application intended to help users identify and review potential opportunities from SAM.gov.
-repo_url: https://github.com/ryan-kirk/samgov
 order: 40
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/samgov">github.com/ryan-kirk/samgov</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-SAM.gov Assistant is positioned as a focused workflow tool for helping users find relevant government contract opportunities more efficiently than a manual search-only process.
+Opportunity Scout is positioned as a focused workflow tool for helping users find relevant government contract opportunities more efficiently than a manual search-only process.
 
 ## Functionality
 
@@ -48,7 +47,3 @@ The current public-facing detail is intentionally limited, so this placeholder k
     <p class="screenshot-placeholder-copy">Add a screenshot of the interface used to inspect, compare, or qualify an opportunity once it has been found.</p>
   </article>
 </section>
-
-## Notes
-
-This page is intentionally provisional and based on the current repository description. Review carefully before publishing because the repository itself is private.

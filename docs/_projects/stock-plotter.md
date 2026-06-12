@@ -1,18 +1,17 @@
 ---
-title: Stock Plotter
+title: Market Trajectory Viewer
 category_label: Financial Visualization
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: A placeholder for an older private repository whose name suggests a stock-charting or market-visualization application.
-repo_url: https://github.com/ryan-kirk/stock-plotter
 order: 170
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/stock-plotter">github.com/ryan-kirk/stock-plotter</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-The repository name suggests a stock-visualization or market-charting tool, but the current metadata does not provide a fuller description.
+Market Trajectory Viewer appears to be a stock-visualization or market-charting tool, though the currently published metadata does not provide a fuller description.
 
 ## Functionality
 
@@ -41,7 +40,3 @@ Current technical placeholder status:
     <p class="screenshot-placeholder-copy">Use later for any secondary visualization or comparison capability the application includes.</p>
   </article>
 </section>
-
-## Notes
-
-This placeholder is intentionally light because the current metadata is sparse and the repository appears to be older.

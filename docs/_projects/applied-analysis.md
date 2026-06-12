@@ -1,18 +1,18 @@
 ---
-title: Applied Analysis
+title: Applied Analysis Studio
 category_label: Analytics Portfolio
-access_label: Public repository
+access_label: Public source repository
+repo_visibility: public
 summary: Decision-oriented analytical case studies and reusable Python components for identifying changes, thresholds, and operational pressure in real-world systems.
 repo_url: https://github.com/ryan-kirk/applied-analysis
 order: 10
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/applied-analysis">github.com/ryan-kirk/applied-analysis</a><br><strong>Access:</strong> Public repository</p>
 
 ## Goal
 
-Applied Analysis is built to show how small, transparent analytical systems can turn raw data into clearer decisions. The repository acts as both a public portfolio and a working sandbox for decision-support analysis.
+Applied Analysis Studio is built to show how small, transparent analytical systems can turn raw data into clearer decisions. The project acts as both a public portfolio and a working sandbox for decision-support analysis.
 
 ## Functionality
 
@@ -51,7 +51,3 @@ The technical profile of the repository currently includes:
     <p class="screenshot-placeholder-copy">Add a chart or multi-panel output that best represents how the repository turns data into an interpretable signal.</p>
   </article>
 </section>
-
-## Notes
-
-This project is the anchor for the current website and now serves as the template for how other repository-level portfolio pages can be described.

@@ -1,18 +1,17 @@
 ---
-title: Disco War
+title: Interaction Lab Prototype
 category_label: Private Placeholder
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: A provisional portfolio placeholder for a private repository whose current public-facing purpose is not yet described.
-repo_url: https://github.com/ryan-kirk/disco-war
 order: 110
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/disco-war">github.com/ryan-kirk/disco-war</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-The repository name is visible, but there is no short description currently available from the repository metadata. This page exists only as a placeholder so you can decide later whether the project belongs on the portfolio at all.
+Interaction Lab Prototype is currently represented by a minimal placeholder because there is not yet enough published metadata to describe the application more confidently.
 
 ## Functionality
 
@@ -41,7 +40,3 @@ Current technical placeholder status:
     <p class="screenshot-placeholder-copy">Use this slot later for the clearest screenshot that explains the application's purpose.</p>
   </article>
 </section>
-
-## Notes
-
-This is intentionally minimal because the repository metadata is sparse and the project may be sensitive or not portfolio-ready.

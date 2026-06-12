@@ -1,18 +1,17 @@
 ---
-title: Showing Day Home
+title: Showing Day
 category_label: Marketing Site
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: A homepage repository for the Showing Day application, likely focused on public-facing positioning, product messaging, or marketing presentation.
-repo_url: https://github.com/ryan-kirk/showing-day-home
 order: 120
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/showing-day-home">github.com/ryan-kirk/showing-day-home</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-Showing Day Home appears to serve as the homepage or marketing surface for a larger application, with the goal of framing the product clearly for visitors.
+Showing Day appears to serve as the homepage or marketing surface for a larger application, with the goal of framing the product clearly for visitors.
 
 ## Functionality
 
@@ -48,7 +47,3 @@ The current technical description is intentionally conservative:
     <p class="screenshot-placeholder-copy">Add a screenshot of a section that explains how the application works or what users gain from it.</p>
   </article>
 </section>
-
-## Notes
-
-This placeholder is useful if you want to present product and website work separately from the underlying application logic.

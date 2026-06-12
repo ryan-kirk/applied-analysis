@@ -1,18 +1,17 @@
 ---
-title: Resume Tailoring System
+title: Resume Alignment Studio
 category_label: Career Workflow
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: A structured repository for aligning job requirements with experience so resumes can be tailored to specific opportunities more deliberately.
-repo_url: https://github.com/ryan-kirk/resume
 order: 60
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/resume">github.com/ryan-kirk/resume</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-This repository is aimed at making resume customization more systematic by structuring role requirements, prior experience, and positioning decisions in a reusable way.
+Resume Alignment Studio is aimed at making resume customization more systematic by structuring role requirements, prior experience, and positioning decisions in a reusable way.
 
 ## Functionality
 
@@ -48,7 +47,3 @@ The current description suggests a structured content and decision-support workf
     <p class="screenshot-placeholder-copy">Add a screenshot or redacted view showing how the system helps produce a tailored resume version.</p>
   </article>
 </section>
-
-## Notes
-
-This page should be reviewed carefully before publication because it concerns personal career materials and may deserve either a softer description or removal.

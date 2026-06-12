@@ -1,18 +1,17 @@
 ---
-title: Hedgy
+title: Market Research Desk
 category_label: Multi-Agent Research
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: A multi-agent trading research and decision-support system for analyzing market questions through coordinated workflow steps.
-repo_url: https://github.com/ryan-kirk/hedgy
 order: 80
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/hedgy">github.com/ryan-kirk/hedgy</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-Hedgy appears to be designed as a decision-support system for trading or market research, using multiple coordinated agents or workflow roles to investigate questions and support judgment.
+Market Research Desk appears to be designed as a decision-support system for trading or market research, using multiple coordinated agents or workflow roles to investigate questions and support judgment.
 
 ## Functionality
 
@@ -46,7 +45,3 @@ The description supports the following conservative technical framing:
     <p class="screenshot-placeholder-copy">Add a screenshot of the final analysis, recommendation, or market-research summary surface.</p>
   </article>
 </section>
-
-## Notes
-
-Because this repository is private and the description is short, this page should be reviewed for sensitivity before publication, especially if it reflects proprietary strategy or workflows.

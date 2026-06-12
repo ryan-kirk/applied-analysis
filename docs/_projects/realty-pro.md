@@ -1,18 +1,17 @@
 ---
-title: Realty Pro
+title: Buyer Advisory Workspace
 category_label: Real Estate Workflow
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: An application to help real estate agents better support buyer clients through a more structured workflow.
-repo_url: https://github.com/ryan-kirk/realty-pro
 order: 100
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/realty-pro">github.com/ryan-kirk/realty-pro</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-Realty Pro is aimed at improving the workflow real estate agents use to support buyer clients, likely by organizing information, communication, and next-step decision support in one place.
+Buyer Advisory Workspace is aimed at improving the workflow real estate agents use to support buyer clients, likely by organizing information, communication, and next-step decision support in one place.
 
 ## Functionality
 
@@ -46,7 +45,3 @@ The current description supports a careful, high-level technical summary:
     <p class="screenshot-placeholder-copy">Add a screenshot of the interface where property details, communication, or recommendations are organized for the client.</p>
   </article>
 </section>
-
-## Notes
-
-This page should be reviewed for how much product specificity you want to expose publicly, especially if the workflow overlaps with proprietary client-support methods.

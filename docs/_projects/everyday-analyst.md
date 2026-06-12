@@ -1,18 +1,17 @@
 ---
-title: Everyday Analyst
+title: Analyst Companion
 category_label: Private Placeholder
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: A provisional portfolio placeholder for a private repository whose name suggests an analytics-oriented application, but whose current metadata is sparse.
-repo_url: https://github.com/ryan-kirk/everyday-analyst
 order: 130
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/everyday-analyst">github.com/ryan-kirk/everyday-analyst</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-The repository name suggests an analytics-oriented product or tool, but there is not enough current metadata to describe the goal confidently beyond that.
+Analyst Companion appears to represent an analytics-oriented product or tool, but the current published metadata is still too sparse to describe the goal more confidently than that.
 
 ## Functionality
 
@@ -41,7 +40,3 @@ Current technical placeholder status:
     <p class="screenshot-placeholder-copy">Use later for the best view that explains the product at a glance.</p>
   </article>
 </section>
-
-## Notes
-
-This page is a provisional placeholder only and may be a good candidate for removal if the application is not meant for public discussion.

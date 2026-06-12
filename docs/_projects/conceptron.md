@@ -1,18 +1,17 @@
 ---
-title: Conceptron
+title: Narrative Intelligence Studio
 category_label: Narrative Analysis
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: An application that extracts information from structured and unstructured sources, identifies themes, tests hypotheses, and presents resulting narratives in an interactive UI.
-repo_url: https://github.com/ryan-kirk/conceptron
 order: 90
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/conceptron">github.com/ryan-kirk/conceptron</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-Conceptron is framed as a system for turning diverse information sources into thematic analysis, structured hypothesis testing, and interactive narrative outputs.
+Narrative Intelligence Studio is framed as a system for turning diverse information sources into thematic analysis, structured hypothesis testing, and interactive narrative outputs.
 
 ## Functionality
 
@@ -48,7 +47,3 @@ The current placeholder highlights the likely technical strengths implied by the
     <p class="screenshot-placeholder-copy">Add a screenshot of the interactive UI where hypotheses, findings, or narratives are presented.</p>
   </article>
 </section>
-
-## Notes
-
-This is one of the stronger conceptual portfolio entries in the current set, but the private nature of the repository means the public description should stay conservative until you decide what details are safe to reveal.

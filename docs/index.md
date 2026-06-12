@@ -26,19 +26,30 @@ comments: false
 
 ## Selected Projects
 
-<p class="section-intro">Repository profiles that describe what each application does, how it is structured, and where it fits inside the broader portfolio. This working set currently includes both public projects and provisional private entries for review.</p>
+<p class="section-intro">Selected applications across analytics, decision support, geospatial exploration, research tooling, and workflow design.</p>
 
 <section class="project-list">
 	{% assign projects = site.projects | sort: 'order' %}
 	{% for project in projects %}
 	<article class="project-card">
+		<a class="project-card-media" href="{{ project.url | relative_url }}">
+			{% if project.image %}
+			<img class="project-card-image" src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: project.title }}">
+			{% else %}
+			<div class="project-card-placeholder" role="img" aria-label="Placeholder thumbnail for {{ project.title }}">
+				<p class="project-card-placeholder-kicker">{{ project.category_label | default: 'Application' }}</p>
+				<h3 class="project-card-placeholder-title">Preview Coming Soon</h3>
+				<p class="project-card-placeholder-note">{{ project.title }}</p>
+			</div>
+			{% endif %}
+		</a>
 		<p class="project-card-kicker">{{ project.category_label | default: 'Project' }}</p>
 		<p class="project-card-meta">{{ project.access_label | default: 'Public repository' }}</p>
 		<h3 class="project-card-title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
 		<p class="project-card-summary">{{ project.summary }}</p>
 		<p class="project-card-links">
 			<a href="{{ project.url | relative_url }}">Project profile</a>
-			{% if project.repo_url %}<a href="{{ project.repo_url }}">Repository</a>{% endif %}
+			{% if project.repo_visibility == 'public' and project.repo_url %}<a href="{{ project.repo_url }}">Repository</a>{% endif %}
 		</p>
 	</article>
 	{% endfor %}

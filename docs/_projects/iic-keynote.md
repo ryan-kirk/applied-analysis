@@ -1,18 +1,18 @@
 ---
-title: IIC Keynote
+title: From Signals to Decisions
 category_label: Presentation System
-access_label: Public repository
+access_label: Public source repository
+repo_visibility: public
 summary: An interactive keynote deck and PowerPoint export workflow focused on how data, geospatial systems, and AI are reshaping agricultural co-ops.
 repo_url: https://github.com/ryan-kirk/iic-keynote
 order: 30
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/iic-keynote">github.com/ryan-kirk/iic-keynote</a><br><strong>Access:</strong> Public repository</p>
 
 ## Goal
 
-IIC Keynote packages a live presentation, supporting visual assets, and export tooling into a single repository so the same source material can power both a web presentation and a PowerPoint deck.
+From Signals to Decisions packages a live presentation, supporting visual assets, and export tooling into a single project so the same source material can power both a web presentation and a PowerPoint deck.
 
 ## Functionality
 
@@ -50,7 +50,3 @@ The repository currently appears to include:
     <p class="screenshot-placeholder-copy">Add a screenshot of either the generated PowerPoint artifacts or the chart-export output used in the deck.</p>
   </article>
 </section>
-
-## Notes
-
-This project is a strong portfolio example for content systems, executive communication, and code-backed presentation tooling. Later updates should add screenshots and a short explanation of how the export pipeline is structured.

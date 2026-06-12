@@ -1,18 +1,17 @@
 ---
-title: Civic App
+title: Civic Signal
 category_label: Civic Engagement
-access_label: Private repository
+access_label: Private portfolio entry
+repo_visibility: private
 summary: An application that helps users follow and engage with the latest developments within their local governments.
-repo_url: https://github.com/ryan-kirk/civic-app
 order: 140
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/civic-app">github.com/ryan-kirk/civic-app</a><br><strong>Access:</strong> Private repository</p>
 
 ## Goal
 
-Civic App is designed to make local government activity easier for citizens to follow and engage with, likely by reducing the friction between public information and public participation.
+Civic Signal is designed to make local government activity easier for citizens to follow and engage with, likely by reducing the friction between public information and public participation.
 
 ## Functionality
 
@@ -48,7 +47,3 @@ The current description supports a conservative technical profile:
     <p class="screenshot-placeholder-copy">Add a screenshot showing how the app helps users respond, track, or participate once an update matters to them.</p>
   </article>
 </section>
-
-## Notes
-
-This is a strong public-interest portfolio concept. Later revisions could add more specificity around the data sources, jurisdiction model, and engagement mechanics if you want the page to be more concrete.

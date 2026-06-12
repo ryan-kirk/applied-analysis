@@ -1,18 +1,18 @@
 ---
-title: Acts
+title: Bible Time & Place Explorer
 category_label: Source-Grounded Explorer
-access_label: Public repository
+access_label: Public source repository
+repo_visibility: public
 summary: A scripture exploration application for navigating biblical events across time, geography, people, and sources with explicit citations and uncertainty handling.
 repo_url: https://github.com/ryan-kirk/acts
 order: 20
 comments: false
 ---
 
-<p class="project-meta"><strong>Repository:</strong> <a href="https://github.com/ryan-kirk/acts">github.com/ryan-kirk/acts</a><br><strong>Access:</strong> Public repository</p>
 
 ## Goal
 
-Acts is designed to help users explore biblical events across time and place while keeping the visible claims traceable to canonical text, source records, and explicit uncertainty.
+Bible Time & Place Explorer is designed to help users explore biblical events across time and place while keeping the visible claims traceable to canonical text, source records, and explicit uncertainty.
 
 ## Functionality
 
@@ -51,7 +51,3 @@ The public repository indicates the following technical capabilities:
     <p class="screenshot-placeholder-copy">Add a screenshot that shows how chronology and geography are made legible in the interface.</p>
   </article>
 </section>
-
-## Notes
-
-This page is intentionally a portfolio placeholder. It should later expand with implementation notes, screenshots, and a clearer walkthrough of the canonical data model and exploration workflow.

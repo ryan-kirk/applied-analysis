@@ -212,9 +212,96 @@
       }
 
       .project-card {
-        padding: 1.35rem 1.4rem;
+        padding: 1rem 1rem 1.2rem;
         border: 1px solid #ddd6cf;
         background: rgba(255, 255, 255, 0.76);
+      }
+
+      .project-card-media {
+        display: block;
+        margin-bottom: 1rem;
+        text-decoration: none;
+      }
+
+      .project-card-image,
+      .project-hero-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid #d6d3d1;
+        background: white;
+      }
+
+      .project-card-placeholder,
+      .project-hero-placeholder {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #d6d3d1;
+        background:
+          radial-gradient(circle at top right, rgba(15, 76, 92, 0.18), transparent 32%),
+          linear-gradient(140deg, #f7f7f2 0%, #ece8de 50%, #fdfcf8 100%);
+      }
+
+      .project-card-placeholder::before,
+      .project-hero-placeholder::before {
+        content: "";
+        position: absolute;
+        inset: auto -12% -18% auto;
+        width: 48%;
+        height: 64%;
+        background: linear-gradient(180deg, rgba(15, 76, 92, 0.16), rgba(124, 111, 100, 0.08));
+        transform: rotate(-12deg);
+      }
+
+      .project-card-placeholder {
+        aspect-ratio: 16 / 9;
+        padding: 1rem;
+        display: grid;
+        align-content: end;
+      }
+
+      .project-hero-placeholder {
+        aspect-ratio: 16 / 9;
+        padding: 1.4rem;
+        display: grid;
+        align-content: end;
+        margin: 0 0 1.4rem;
+      }
+
+      .project-card-placeholder-kicker,
+      .project-hero-placeholder-kicker {
+        position: relative;
+        margin: 0 0 0.35rem;
+        color: #0f4c5c;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .project-card-placeholder-title,
+      .project-hero-placeholder-title {
+        position: relative;
+        margin: 0 0 0.35rem;
+        color: #1f2937;
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+      }
+
+      .project-card-placeholder-title {
+        font-size: 1.45rem;
+      }
+
+      .project-hero-placeholder-title {
+        font-size: clamp(1.85rem, 4vw, 3rem);
+      }
+
+      .project-card-placeholder-note,
+      .project-hero-placeholder-note {
+        position: relative;
+        margin: 0;
+        color: #57534e;
+        font-size: 0.95rem;
       }
 
       .project-card-kicker {
@@ -389,6 +476,10 @@
         font-size: 0.92rem;
       }
 
+      .aa-footer p {
+        margin: 0;
+      }
+
       @media (max-width: 720px) {
         .aa-shell {
           padding: 0 18px 42px;
@@ -449,6 +540,10 @@
         .screenshot-grid {
           grid-template-columns: 1fr;
         }
+
+        .project-card-placeholder-title {
+          font-size: 1.3rem;
+        }
       }
     </style>
   </head>
@@ -463,6 +558,7 @@
             <nav class="aa-site-nav" aria-label="Primary">
               <a href="{{ '/' | relative_url }}">Home</a>
               <a href="{{ '/projects/' | relative_url }}">Projects</a>
+              <a href="{{ '/terms/' | relative_url }}">Terms</a>
             </nav>
           </div>
         </div>
@@ -482,6 +578,27 @@
 
           {% if page.collection == 'projects' and page.summary %}
           <p class="section-intro">{{ page.summary }}</p>
+          {% endif %}
+
+          {% if page.collection == 'projects' %}
+            {% if page.image %}
+            <figure class="project-hero">
+              <img class="project-hero-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
+            </figure>
+            {% else %}
+            <section class="project-hero-placeholder" role="img" aria-label="Placeholder thumbnail for {{ page.title }}">
+              <p class="project-hero-placeholder-kicker">{{ page.category_label | default: 'Application' }}</p>
+              <h2 class="project-hero-placeholder-title">Preview Coming Soon</h2>
+              <p class="project-hero-placeholder-note">{{ page.title }}</p>
+            </section>
+            {% endif %}
+
+          <p class="project-meta">
+            <strong>Access:</strong> {{ page.access_label | default: 'Portfolio entry' }}
+            {% if page.repo_visibility == 'public' and page.repo_url %}
+            <br><strong>Source:</strong> <a href="{{ page.repo_url }}">View public repository</a>
+            {% endif %}
+          </p>
           {% endif %}
 
           {% if page.date %}
@@ -514,7 +631,7 @@
       </main>
 
       <footer class="aa-footer">
-        Portfolio site built from the Applied Analysis repository with GitHub Pages.
+        <p>This website, all content, and the projects presented here are Copyright &copy; {{ site.time | date: "%Y" }} Applied Analysis LLC. <a href="{{ '/terms/' | relative_url }}">Terms of Use and Licensing</a>.</p>
       </footer>
     </div>
   </body>

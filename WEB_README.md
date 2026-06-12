@@ -31,15 +31,18 @@ There is no custom website build pipeline checked into this repository. The curr
   - Serves as the shared layout for the home page, project pages, and posts.
   - Pulls in `{{ '/assets/main.css' | relative_url }}`, which comes from the configured Jekyll theme rather than a committed local CSS file.
   - Contains most of the site's custom visual styling as inline CSS and uses `aa-` prefixed classes to avoid collisions with the Minima theme.
-  - Renders the header, navigation, body content, footer, and the giscus comments embed.
+  - Renders the header, navigation, body content, footer, copyright notice, and the giscus comments embed.
 
 - `docs/_projects/`
   - Contains one Markdown file per portfolio project or repository profile.
-  - Each project page can carry its own summary, category label, order, and repository link.
-  - The current project set includes both public repositories and provisional private placeholders pending review.
+  - Each project page can carry its own summary, category label, order, access status, and optional public repository link.
+  - The current project set includes both public projects and private portfolio entries.
 
 - `docs/projects/index.md`
   - Serves as the portfolio index page for repository-level project profiles.
+
+- `docs/terms.md`
+  - Serves as the Terms of Use and Licensing page linked from the header and footer.
 
 - `docs/_posts/`
   - Contains one Markdown file per published article.
@@ -66,16 +69,18 @@ The current website supports the following:
 - A primary navigation with:
   - home link
   - projects link
+  - terms link
 
 - A project index driven by `site.projects`
   - project profile cards render automatically from the collection
-  - each card can show a category label, title, summary, and repository link
+  - each card can show a category label, title, summary, access label, placeholder thumbnail, and optional public repository link
 
 - Individual project pages with:
   - project title
   - summary
+  - placeholder hero thumbnail when no screenshot has been added yet
   - Markdown body content
-  - optional repository link
+  - optional public repository link
   - link back to the projects index
 
 - A post index driven by `site.posts`
@@ -108,6 +113,7 @@ At the time of this review, the site contains:
 
 - 1 home page: `docs/index.md`
 - 1 project index page: `docs/projects/index.md`
+- 1 terms page: `docs/terms.md`
 - 17 project profiles in `docs/_projects/`
 - 6 published posts in `docs/_posts/`
 - 8 images in `docs/assets/images/`
