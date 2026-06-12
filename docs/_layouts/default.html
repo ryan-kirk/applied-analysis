@@ -566,6 +566,7 @@
             <p class="aa-site-tagline">{{ site.description }}</p>
             <nav class="aa-site-nav" aria-label="Primary">
               <a href="{{ '/' | relative_url }}">Home</a>
+              <a href="{{ '/services/' | relative_url }}">Services</a>
               <a href="{{ '/projects/' | relative_url }}">Portfolio</a>
               <a href="{{ '/blog/' | relative_url }}">Blog</a>
               <a href="{{ '/about/' | relative_url }}">About</a>
@@ -581,7 +582,7 @@
           <p><a class="home-link" href="{{ '/projects/' | relative_url }}">Back to portfolio</a></p>
           {% elsif page.collection == 'posts' %}
           <p><a class="home-link" href="{{ '/blog/' | relative_url }}">Back to blog</a></p>
-          {% elsif page.url != '/' and page.url != '/about/' and page.url != '/blog/' and page.url != '/projects/' and page.url != '/terms/' %}
+          {% elsif page.url != '/' and page.url != '/about/' and page.url != '/blog/' and page.url != '/projects/' and page.url != '/services/' and page.url != '/terms/' %}
           <p><a class="home-link" href="{{ '/' | relative_url }}">Back to home</a></p>
           {% endif %}
 
